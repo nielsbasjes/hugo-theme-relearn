@@ -1,289 +1,318 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.134.2">
-    <meta name="generator" content="Relearn 6.4.0+tip">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Expandable/collapsible sections of text">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/featured.png">
     <meta name="twitter:title" content="Expand :: Hugo Relearn Theme">
     <meta name="twitter:description" content="Expandable/collapsible sections of text">
-    <meta property="og:url" content="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/expand/index.html">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/index.html">
     <meta property="og:site_name" content="Hugo Relearn Theme">
     <meta property="og:title" content="Expand :: Hugo Relearn Theme">
     <meta property="og:description" content="Expandable/collapsible sections of text">
     <meta property="og:locale" content="en">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="Shortcodes">
-    <meta property="og:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/featured.png">
     <meta itemprop="name" content="Expand :: Hugo Relearn Theme">
     <meta itemprop="description" content="Expandable/collapsible sections of text">
-    <meta itemprop="wordCount" content="289">
-    <meta itemprop="image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="wordCount" content="349">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/featured.png">
+    <meta itemprop="keywords" content="Howto,Reference">
     <title>Expand :: Hugo Relearn Theme</title>
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="alternate" hreflang="en">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/expand/index.html" rel="alternate" hreflang="art-x-pir">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="canonical" type="text/html" title="Expand :: Hugo Relearn Theme">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/expand/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/expand/index.html" rel="canonical" type="text/html" title="Expand :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/expand/index.xml" rel="alternate" type="application/rss+xml" title="Expand :: Hugo Relearn Theme">
-    <link href="/hugo-theme-relearn/images/logo.svg?1726172281" rel="icon" type="image/svg+xml">
-    <link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/nucleus.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar.min.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-style">
-    <link href="/hugo-theme-relearn/css/chroma-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/hugo-theme-relearn/css/variant.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/print.css?1726172281" rel="stylesheet" media="print">
-    <link href="/hugo-theme-relearn/css/format-print.css?1726172281" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/variant.js?1726172281"></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/mcshelby.github.io\/hugo-theme-relearn';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/hugo-theme-relearn/index.search.js?1726172281";
-      // variant stuff
-      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
-    </script>
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.ab49d96ad5c84d9a6d617cb5b302a83613b451cde3871cd55a4f7830feb89d07.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/shortcodes/expand/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
+       
       #R-body img.bg-white {
         background-color: white;
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/hugo-theme-relearn/shortcodes/expand/index.html">
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/expand/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar">
-        <div class="topbar-wrapper">
-          <div class="topbar-sidebar-divider"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#migration">Migration</a></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Expand</span><meta itemprop="position" content="2"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Shortcodes &gt; Expand" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Expand</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/children/children-3/test3/index.html" title="page 3-1 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/expand/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/highlight/index.html" title="Highlight (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/expand/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/details/index.html" title="Details (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/highlight/index.html" title="Highlight (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+      <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
 
 <h1 id="expand">Expand</h1>
 
-<p>The <code>expand</code> shortcode displays an expandable/collapsible section of text.</p>
-<div class="expand">
-  <input type="checkbox" id="R-expand-2f90cd96739b09c415bf74f627e2ebf4" aria-controls="R-expandcontent-2f90cd96739b09c415bf74f627e2ebf4">
-  <label class="expand-label" for="R-expand-2f90cd96739b09c415bf74f627e2ebf4">
-    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> Expand me&hellip;
-  </label>
-  <div id="R-expandcontent-2f90cd96739b09c415bf74f627e2ebf4" class="expand-content">
-<p>Thank you!</p>
-<p>That&rsquo;s some text with a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p>That&rsquo;s some more text with a footnote.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>And that&rsquo;s the footnote.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>Anything of interest goes here.</p>
-<p>Blue light glows blue.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
+
+<details open class="box cstyle callout warning">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> 
+    Warning
+  </summary>
+  <div class="box-content">
+<p>This shortcode is deprecated in favor of Hugo&rsquo;s <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>details</code> shortcode</a>. See <a href="/hugo-theme-relearn/shortcodes/expand/index.html#migration">migration instructions</a> below.</p>
+<p>The examples on this page were removed.</p>
   </div>
-</div>
-<h2 id="usage">Usage</h2>
-<p>While the examples are using shortcodes with named parameter you are free to use positional as well or also call this shortcode from your own partials.</p>
-<div class="tab-panel" data-tab-group="shortcode-parameter">
+</details>
+<p>The <code>expand</code> shortcode displays an expandable/collapsible section of text.</p>
+<h2 id="migration">Migration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>While this shortcode will still be available for some time, it does not receive support anymore. Start to migrate early, as it will be removed with the next major update of the theme.</p>
+<p>Each use of the <code>expand</code> shortcode issues a warning during the build.</p>
+<p>The <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>details</code> shortcode</a> displays the same section but is called differently. A call can not just be renamed.</p>
+<table>
+  <thead>
+    <tr>
+      <th><code>expand</code></th>
+      <th><code>details</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>title</code> or first parameter</td>
+      <td><code>summary</code></td>
+    </tr>
+    <tr>
+      <td><code>expanded</code> or second parameter</td>
+      <td><code>open</code></td>
+    </tr>
+    <tr>
+      <td><code>{{% expand %}}</code></td>
+      <td><code>{{&lt; details &gt;}}</code></td>
+    </tr>
+    <tr>
+      <td><code>{{&lt; expand &gt;}}</code></td>
+      <td><code>{{&lt; details raw=true &gt;}}</code></td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+<li>The <code>details</code> shortcode takes no positional parameters. Name them.</li>
+<li>Don&rsquo;t keep <code>title</code>. The <code>details</code> shortcode knows this parameter too, but displays it as a tooltip. Your section would silently be titled <code>Details</code>.</li>
+<li>Call the <code>details</code> shortcode with <code>{{&lt; details &gt;}}</code>. It renders its content as Markdown in this notation, where the <code>expand</code> shortcode wrote it as it is.</li>
+<li>If you called the <code>expand</code> shortcode with <code>{{&lt; expand &gt;}}</code>, your content is HTML or contains other shortcodes. Set <code>raw=true</code> to keep it written as it is.</li>
+<li>The content of the <code>details</code> shortcode is rendered apart from the rest of your page. If it defines footnotes, contains headings or calls other shortcodes, see <a href="/hugo-theme-relearn/shortcodes/details/index.html#raw-content">the consequences</a>.</li>
+</ul>
+<p>If you call the shortcode from your own partials, rename <code>shortcodes/expand.html</code> to <code>shortcodes/details.html</code>, rename the parameters as above and set <code>raw</code> to <code>true</code> if your content is HTML already.</p>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      data-tab-item="shortcode"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('shortcode-parameter','shortcode')"
+      aria-controls="R-tab-id-4a1ce043969ad7c4aa3379a4156d4346" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
-      <span class="tab-nav-text">shortcode</span>
+      <span class="tab-nav-text">Shortcode</span>
     </button>
     <button
-      data-tab-item="shortcode-positional"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','shortcode-positional')"
+      aria-controls="R-tab-id-f55e3023fd71cd215eba2eb0615519d6" aria-expanded="false"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">shortcode (positional)</span>
+      <span class="tab-nav-text">Shortcode (positional)</span>
     </button>
     <button
-      data-tab-item="partial"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','partial')"
+      aria-controls="R-tab-id-f0d5e2de799ce0bb8955f562932606f7" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">partial</span>
+      <span class="tab-nav-text">Partial</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      data-tab-item="shortcode"
-      class="tab-content tab-panel-style cstyle initial active">
+      id="R-tab-id-4a1ce043969ad7c4aa3379a4156d4346"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">expand</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span> <span class="o">%</span><span class="p">}}</span><span class="nx">Thank</span> <span class="nx">you</span><span class="p">!{{</span><span class="o">%</span> <span class="o">/</span><span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">Thank</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="shortcode-positional"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-f55e3023fd71cd215eba2eb0615519d6"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">expand</span> <span class="s">&#34;Expand me...&#34;</span> <span class="o">%</span><span class="p">}}</span><span class="nx">Thank</span> <span class="nx">you</span><span class="p">!{{</span><span class="o">%</span> <span class="o">/</span><span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">Thank</span><span class="w"> </span><span class="nx">you</span><span class="p">!</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">expand</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="partial"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-f0d5e2de799ce0bb8955f562932606f7"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;shortcodes/expand.html&#34;</span> <span class="p">(</span><span class="nx">dict</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;page&#34;</span>  <span class="p">.</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;title&#34;</span> <span class="s">&#34;Expand me...&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;content&#34;</span> <span class="s">&#34;Thank you!&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/expand.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Thank you!&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Expand me...&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h3 id="parameter">Parameter</h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
-      <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Position</th>
-          <th style="text-align: left">Default</th>
-          <th style="text-align: left">Notes</th>
-      </tr>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
   </thead>
   <tbody>
-      <tr>
-          <td style="text-align: left"><strong>title</strong></td>
-          <td style="text-align: left">1</td>
-          <td style="text-align: left"><code>&quot;Expand me...&quot;</code></td>
-          <td style="text-align: left">Arbitrary text to appear next to the expand/collapse icon.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>expanded</strong></td>
-          <td style="text-align: left">2</td>
-          <td style="text-align: left"><code>false</code></td>
-          <td style="text-align: left">How the content is displayed.<br><br>- <code>true</code>: the content is initially shown<br>- <code>false</code>: the content is initially hidden</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><em><strong>&lt;content&gt;</strong></em></td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"><em>&lt;empty&gt;</em></td>
-          <td style="text-align: left">Arbitrary text to be displayed on expand.</td>
-      </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>1</td>
+      <td><code>&quot;Details&quot;</code></td>
+      <td>Arbitrary text to appear next to the expand/collapse icon.</td>
+    </tr>
+    <tr>
+      <td><strong>expanded</strong></td>
+      <td>2</td>
+      <td><code>false</code></td>
+      <td>How the content is displayed.<br><br>- <code>true</code>: the content is initially shown<br>- <code>false</code>: the content is initially hidden</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary text to be displayed on expand.</td>
+    </tr>
   </tbody>
 </table>
-<h2 id="examples">Examples</h2>
-<h3 id="all-defaults">All Defaults</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span><span class="nx">Yes</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">did</span> <span class="nx">it</span><span class="p">!{{</span><span class="o">%</span> <span class="o">/</span><span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="expand">
-  <input type="checkbox" id="R-expand-d51696956c77b76ee278fbbe46bab9c1" aria-controls="R-expandcontent-d51696956c77b76ee278fbbe46bab9c1">
-  <label class="expand-label" for="R-expand-d51696956c77b76ee278fbbe46bab9c1">
-    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> Expand me&hellip;
-  </label>
-  <div id="R-expandcontent-d51696956c77b76ee278fbbe46bab9c1" class="expand-content">
-<p>
-Yes, you did it!
-  </div>
-</div>
-<h3 id="initially-expanded">Initially Expanded</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">expand</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;Expand me...&#34;</span> <span class="nx">expanded</span><span class="p">=</span><span class="s">&#34;true&#34;</span> <span class="o">%</span><span class="p">}}</span><span class="nx">No</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">press</span> <span class="nx">you</span><span class="p">!{{</span><span class="o">%</span> <span class="o">/</span><span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="expand">
-  <input type="checkbox" id="R-expand-3fe6c9f9e686f52c43f992dcd5a3dcdf" aria-controls="R-expandcontent-3fe6c9f9e686f52c43f992dcd5a3dcdf" checked>
-  <label class="expand-label" for="R-expand-3fe6c9f9e686f52c43f992dcd5a3dcdf">
-    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> Expand me&hellip;
-  </label>
-  <div id="R-expandcontent-3fe6c9f9e686f52c43f992dcd5a3dcdf" class="expand-content">
-<p>
-No need to press you!
-  </div>
-</div>
-<h3 id="arbitrary-text">Arbitrary Text</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">expand</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;Show me almost **endless** possibilities&#34;</span> <span class="o">%</span><span class="p">}}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">You</span> <span class="nx">can</span> <span class="nx">add</span> <span class="nx">standard</span> <span class="nx">markdown</span> <span class="nx">syntax</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="nx">multiple</span> <span class="nx">paragraphs</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="nx">bullet</span> <span class="nx">point</span> <span class="nx">lists</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="nx">_emphasized_</span><span class="p">,</span> <span class="o">**</span><span class="nx">bold</span><span class="o">**</span> <span class="nx">and</span> <span class="nx">even</span> <span class="o">**</span><span class="nx">_bold</span> <span class="nx">emphasized_</span><span class="o">**</span> <span class="nx">text</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="p">[</span><span class="nx">links</span><span class="p">](</span><span class="nx">https</span><span class="p">:</span><span class="c1">//example.com)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">-</span> <span class="nx">etc</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="s">```plaintext
-</span></span></span><span class="line"><span class="cl"><span class="s">...and even source code
-</span></span></span><span class="line"><span class="cl"><span class="s">```</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&gt;</span> <span class="nx">the</span> <span class="nx">possibilities</span> <span class="nx">are</span> <span class="nf">endless</span> <span class="p">(</span><span class="nx">almost</span> <span class="o">-</span> <span class="nx">including</span> <span class="nx">other</span> <span class="nx">shortcodes</span> <span class="nx">may</span> <span class="nx">or</span> <span class="nx">may</span> <span class="nx">not</span> <span class="nx">work</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="o">/</span><span class="nx">expand</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="expand">
-  <input type="checkbox" id="R-expand-b6f205eb8d1e5dd43848f2dacc8518fb" aria-controls="R-expandcontent-b6f205eb8d1e5dd43848f2dacc8518fb">
-  <label class="expand-label" for="R-expand-b6f205eb8d1e5dd43848f2dacc8518fb">
-    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> Show me almost <strong>endless</strong> possibilities
-  </label>
-  <div id="R-expandcontent-b6f205eb8d1e5dd43848f2dacc8518fb" class="expand-content">
-<p>You can add standard markdown syntax:</p>
-<ul>
-<li>multiple paragraphs</li>
-<li>bullet point lists</li>
-<li><em>emphasized</em>, <strong>bold</strong> and even <strong><em>bold emphasized</em></strong> text</li>
-<li><a href="https://example.com" rel="external" target="_self">links</a></li>
-<li>etc.</li>
-</ul>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">...and even source code</span></span></code></pre></div>
-<blockquote>
-<p>the possibilities are endless (almost - including other shortcodes may or may not work)</p>
-</blockquote>
-  </div>
-</div>
 
-            <footer class="footline">
-            </footer>
-          </article>
-
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/clipboard.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/theme.js?1726172281" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

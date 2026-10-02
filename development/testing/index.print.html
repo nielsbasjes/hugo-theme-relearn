@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="How to run and extend the automated test suite">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Testing :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="How to run and extend the automated test suite">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/development/testing/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Testing :: Hugo Relearn Theme">
+    <meta property="og:description" content="How to run and extend the automated test suite">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Testing :: Hugo Relearn Theme">
+    <meta itemprop="description" content="How to run and extend the automated test suite">
+    <meta itemprop="wordCount" content="2030">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="keywords" content="Explanation,Howto">
+    <title>Testing :: Hugo Relearn Theme</title>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/development/testing/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/development/testing/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/development/testing/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/development/testing/index.html" rel="canonical" type="text/html" title="Testing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/development/testing/index.xml" rel="alternate" type="application/rss+xml" title="Testing :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.ab49d96ad5c84d9a6d617cb5b302a83613b451cde3871cd55a4f7830feb89d07.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/development/testing/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/development/testing/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#running-the-tests">Running the Tests</a></li>
+    <li><a href="#the-vocabulary">The Vocabulary</a></li>
+    <li><a href="#shaping-a-run">Shaping a Run</a>
+      <ul>
+        <li><a href="#--build---run-part-of-the-suite"><code>--build</code> - run part of the suite</a></li>
+        <li><a href="#--hugo---build-with-a-particular-version"><code>--hugo</code> - build with a particular version</a></li>
+        <li><a href="#--update---rewrite-the-expected-output"><code>--update</code> - rewrite the expected output</a></li>
+      </ul>
+    </li>
+    <li><a href="#reading-a-failure">Reading a Failure</a></li>
+    <li><a href="#adding-a-case">Adding a Case</a>
+      <ul>
+        <li><a href="#a-new-site">A New Site</a></li>
+        <li><a href="#varying-a-configuration">Varying a Configuration</a></li>
+        <li><a href="#builds-that-belong-together">Builds That Belong Together</a></li>
+        <li><a href="#accepting-a-known-warning">Accepting a Known Warning</a></li>
+      </ul>
+    </li>
+    <li><a href="#building-a-site-outside-the-suite">Building a Site Outside the Suite</a></li>
+    <li><a href="#continuous-integration">Continuous Integration</a></li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Development &gt; Testing" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/development/index.html"><span itemprop="name">Development</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Testing</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/development/testing/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/development/testing/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/development/developing/index.html" title="Developing (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/development/maintaining/index.html" title="Maintaining (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable development" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="testing">Testing</h1>
+
+<p>The test suite lives in the <a href="/hugo-theme-relearn/development/developing/index.html">infra repository</a> and runs against a theme checkout. See <a href="/hugo-theme-relearn/development/developing/index.html">Developing</a> for how the two are wired together.</p>
+<h2 id="requirements">Requirements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Node.js</strong> at the version <code>.nvmrc</code> pins. Install it through a version manager - <a href="https://github.com/nvm-sh/nvm" rel="external" target="_self">nvm</a>, or <a href="https://github.com/coreybutler/nvm-windows" rel="external" target="_self">nvm-windows</a> - rather than as a system package, so the version can follow the project rather than the machine. <code>nvm use</code> in the infra checkout reads that file, and so does CI, so the two cannot drift.</p>
+<p>The pin is not arbitrary. Before v26.8.1, Node&rsquo;s <code>fs.rmSync</code> silently removed nothing on Windows when a path contained a non-ASCII character, which made &ldquo;replace this directory&rdquo; quietly mean &ldquo;merge into it&rdquo; - and a suite whose whole job is comparing directories cannot live with that.</p>
+<p><strong>Hugo</strong> at least the minimum the theme declares in its <code>theme.toml</code>. The plain edition is enough, as the theme uses no Sass. Install it the same way, through <a href="https://github.com/jmooring/hvm" rel="external" target="_self">hvm</a>, which keeps several versions side by side - the suite can then build against any of them, including the declared minimum, rather than only the one on your <code>PATH</code>.</p>
+<h2 id="running-the-tests">Running the Tests<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Check both repositories out side by side, then:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> hugo-theme-relearn-infra
+</span></span><span class="line"><span class="cl">npm ci
+</span></span><span class="line"><span class="cl">npm test</span></span></code></pre></div>
+<p>The parts run cheapest first and stop at the first failure, so a stale declaration fails at once rather than after a full round of Hugo builds. The whole suite is quick enough to run on every change.</p>
+<p>The checks are <code>tests/checks.js</code> and cover what the build layer cannot see: the runner&rsquo;s own configuration handling, the <a href="/hugo-theme-relearn/development/maintaining/index.html#sbom">dependency declaration</a> - that it matches the vendored tree, and that every shipped component carries a license - and the properties the <a href="/hugo-theme-relearn/configuration/sitemanagement/sbom/index.html">SBOM</a> promises its readers, that it renders identically twice and that its serial number is recomputable from the document and moves with the contents. The SBOM comparison is <code>npm run sbom</code>, a narrower question: whether the committed <code>sbom.cdx.json</code> is still what that declaration renders.</p>
+<p>Each part also runs alone, and those with something to write back do it under an <code>:update</code> name:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Runs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>npm test</code></td>
+      <td>everything</td>
+    </tr>
+    <tr>
+      <td><code>npm run test:update</code></td>
+      <td>everything, rewriting whatever has something to write back</td>
+    </tr>
+    <tr>
+      <td><code>npm run format</code></td>
+      <td>the formatting check</td>
+    </tr>
+    <tr>
+      <td><code>npm run format:update</code></td>
+      <td>the formatting check, rewriting what it flags</td>
+    </tr>
+    <tr>
+      <td><code>npm run checks</code></td>
+      <td>the runner checks</td>
+    </tr>
+    <tr>
+      <td><code>npm run sbom</code></td>
+      <td>the SBOM comparison</td>
+    </tr>
+    <tr>
+      <td><code>npm run sbom:update</code></td>
+      <td>the SBOM comparison, rewriting <code>sbom.cdx.json</code></td>
+    </tr>
+    <tr>
+      <td><code>npm run golden</code></td>
+      <td>the cases</td>
+    </tr>
+    <tr>
+      <td><code>npm run golden:update</code></td>
+      <td>the cases, rewriting the expected output</td>
+    </tr>
+  </tbody>
+</table>
+<p><code>tests/golden.js</code> is the actual runner behind <code>golden</code>. Calling it directly takes the same flags and skips the rest, which is what you want while iterating on one case:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm <span class="nb">test</span> -- --build<span class="o">=</span>&lt;name&gt;
+</span></span><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>&lt;name&gt;</span></span></code></pre></div>
+<p>Flags reach the runner directly; through <code>npm</code> they have to follow a <code>--</code> separator first, and land on the last command in the chain - so the first form still runs every part before the cases, and only then narrows. The examples below use the runner, being the shorter of the two.</p>
+<h2 id="the-vocabulary">The Vocabulary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>A run is more than a list of sites, hence these words:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Site</td>
+      <td>content plus the configuration it needs to be itself</td>
+    </tr>
+    <tr>
+      <td>Axis</td>
+      <td>a dimension of configuration, each of whose values is a config directory</td>
+    </tr>
+    <tr>
+      <td>Case</td>
+      <td>what to build, and how deeply to check it</td>
+    </tr>
+    <tr>
+      <td>Build</td>
+      <td>one Hugo invocation - one site, one configuration</td>
+    </tr>
+    <tr>
+      <td>Result</td>
+      <td>one output tree, compared as a whole</td>
+    </tr>
+  </tbody>
+</table>
+<p>Most cases are one site, one configuration, one result. A case that varies an axis produces a result per combination. A case whose builds only mean something as a pair - a versioned site, or the docs and the exampleSite as GitHub Pages serves them - produces several builds sharing one result.</p>
+<p>Cases live in <code>tests/cases/&lt;name&gt;/case.toml</code> in the infra repository, and reading them is the quickest way to see what the suite covers.</p>
+<h2 id="shaping-a-run">Shaping a Run<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The parameters, all optional:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Selects</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>--build</code></td>
+      <td>which builds to run</td>
+      <td>all of them</td>
+    </tr>
+    <tr>
+      <td><code>--hugo</code></td>
+      <td>which Hugo to build with</td>
+      <td>each site&rsquo;s own, see below</td>
+    </tr>
+    <tr>
+      <td><code>--update</code></td>
+      <td>rewrite the stored output instead of comparing against it</td>
+      <td>compare</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="--build---run-part-of-the-suite"><code>--build</code> - run part of the suite<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>minimal
+</span></span><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>url-permutations
+</span></span><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>url-permutations/urls-relative</span></span></code></pre></div>
+<p><code>--build</code> matches a path prefix, so naming a case runs everything in it and naming a combination runs the one. A small case is cheap enough to run on every save while working on one thing.</p>
+<p>The accepted names are the ones a run prints. To see them without waiting for a full run, ask for something that does not exist and the runner lists them:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>?</span></span></code></pre></div>
+<p>A sequence is the exception: its builds share one tree, so it is named as a whole and a prefix reaching inside it is rejected. A build lifted out of a sequence proves nothing, which is what makes it a sequence.</p>
+<h3 id="--hugo---build-with-a-particular-version"><code>--hugo</code> - build with a particular version<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Left out, each site is built with the version an interactive shell would use in its own directory: the one its <code>.hvm</code> file names, or the <code>hugo</code> on your <code>PATH</code> when there is none. A pin therefore applies to the site it sits beside, and a run can legitimately span several versions. Each site a pin applies to says so in the output, so a result never looks like it came from a version it did not.</p>
+<p>Passing <code>--hugo</code> overrides every pin and holds the whole run to one version:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">node tests/golden.js --hugo<span class="o">=</span>min
+</span></span><span class="line"><span class="cl">node tests/golden.js --hugo<span class="o">=</span>latest
+</span></span><span class="line"><span class="cl">node tests/golden.js --hugo<span class="o">=</span>v0.150.0</span></span></code></pre></div>
+<p><code>min</code> is whatever the theme declares in its <code>theme.toml</code>, and <code>latest</code> the newest release. Anything not already installed is fetched for you.</p>
+<p>Use <code>min</code> before pushing something that might rely on a newer Hugo feature, and <code>latest</code> to see a coming Hugo release before it reaches your users.</p>
+<h3 id="--update---rewrite-the-expected-output"><code>--update</code> - rewrite the expected output<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>When a change legitimately alters what the theme produces, record the new output as the expectation:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm run golden:update
+</span></span><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>&lt;name&gt; --update</span></span></code></pre></div>
+<p>A full regeneration also prunes: a stored result no case produces any more is deleted rather than left behind. A filtered run does not, having no way to know whether a result it did not build still exists.</p>
+<p>Commit the regenerated output together with the change that caused it, never as a commit of its own - otherwise the next person cannot tell which change produced which output.</p>
+
+<details open class="box cstyle callout warning">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> 
+    Warning
+  </summary>
+  <div class="box-content">
+<p>The resulting diff <strong>is</strong> the test result. Read it before committing. An unreviewed regeneration turns the suite from a safety net into a rubber stamp.</p>
+  </div>
+</details>
+<p>If the change spans both repositories, give both branches the same name; see <a href="/hugo-theme-relearn/development/developing/index.html#working-across-both-repositories">Developing</a>.</p>
+<h2 id="reading-a-failure">Reading a Failure<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Every result is checked in layers, and the one that fails tells you what kind of problem you have.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Asserts</th>
+      <th>A failure usually means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Build</td>
+      <td>the build exits cleanly, with no unexpected <code>WARN</code> or <code>ERROR</code></td>
+      <td>a template error, or a Hugo deprecation</td>
+    </tr>
+    <tr>
+      <td>File set</td>
+      <td>exactly the expected files were generated</td>
+      <td>output formats, permalinks or a renamed page</td>
+    </tr>
+    <tr>
+      <td>Content</td>
+      <td>every file is what was stored, byte for byte bar line endings and the checkout path</td>
+      <td>either a regression, or a change you meant to make</td>
+    </tr>
+  </tbody>
+</table>
+<p>Layers are cumulative, and a case declares how deep to go with <code>layer</code>. It defaults to <code>content</code>, so a case opts down rather than up and always says why - the theme&rsquo;s own sites stop at the file set, because a content baseline over 2000 files would churn on every prose edit and be read by nobody.</p>
+<p>A pinned older Hugo reduces every case to the build layer, since Hugo legitimately changes what it emits between releases and a baseline holds for the version that produced it. The run says when that happened, so a build check never reads as a content check.</p>
+<h2 id="adding-a-case">Adding a Case<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>First decide whether you need a new site at all. If an existing one already renders the thing you changed, extending its content is enough - add a page, regenerate, review the diff.</p>
+<h3 id="a-new-site">A New Site<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Everything lives in the infra repository.</p>
+<ol>
+<li>
+<p>Create <code>tests/sites/&lt;name&gt;/</code> with a <code>config/_default/</code> and <code>content/</code>. Keep the configuration about the site - a title, output formats, content wiring. Nothing about reproducibility belongs there; that is what naming the <code>testing</code> environment does.</p>
+</li>
+<li>
+<p>Write the least content that demonstrates your case. Sites are meant to stay small - a readable diff is the whole point, and one needing hundreds of pages is testing the wrong thing.</p>
+</li>
+<li>
+<p>Add <code>tests/cases/&lt;name&gt;/case.toml</code>:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">site</span>        <span class="p">=</span> <span class="s2">&#34;&lt;name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">environment</span> <span class="p">=</span> <span class="s2">&#34;testing&#34;</span></span></span></code></pre></div>
+</li>
+<li>
+<p>Generate its expected output, and read it:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">node tests/golden.js --build<span class="o">=</span>&lt;name&gt; --update</span></span></code></pre></div>
+</li>
+<li>
+<p>Look at <code>tests/expected/&lt;name&gt;/</code>. This is the moment the case is worth something or not: if the output does not show the behaviour you set out to pin, it will not catch a regression in it either.</p>
+</li>
+<li>
+<p>Commit the site, the case and the expected output together.</p>
+</li>
+</ol>
+<h3 id="varying-a-configuration">Varying a Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Some behaviour only differs by configuration - URL generation being the standing example, where relative, absolute and ugly URLs are genuinely different paths through the theme.</p>
+<p>That is what an axis is for. Each value is a config directory under <code>tests/axes/&lt;axis&gt;/&lt;value&gt;/</code>, and a case lists the values it wants:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">site</span>        <span class="p">=</span> <span class="s2">&#34;url-permutations&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">environment</span> <span class="p">=</span> <span class="s2">&#34;testing&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">axes</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">urls</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;relative&#34;</span><span class="p">,</span> <span class="s2">&#34;absolute&#34;</span><span class="p">,</span> <span class="s2">&#34;ugly&#34;</span><span class="p">]</span></span></span></code></pre></div>
+<p>One content set, one result per mode, compared separately. Adding a further mode is a directory and one more name. An axis with a single value still applies - it just does not branch the tree, so nothing is nested that carries no information.</p>
+<h3 id="builds-that-belong-together">Builds That Belong Together<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Some results are not one Hugo build. A versioned site is two, each configured to know about the other; the published GitHub Pages site is the docs with the exampleSite beneath it. Neither half says anything alone.</p>
+<p>Those spell the sequence out, and share one output tree:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">builds</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">site</span>        <span class="p">=</span> <span class="s2">&#34;versioning-current&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">environment</span> <span class="p">=</span> <span class="s2">&#34;testing&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">builds</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">site</span>        <span class="p">=</span> <span class="s2">&#34;versioning-archived&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">environment</span> <span class="p">=</span> <span class="s2">&#34;testing&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dest</span>        <span class="p">=</span> <span class="s2">&#34;0.666&#34;</span></span></span></code></pre></div>
+<p><code>dest</code> says where in the shared tree a build writes. The builds run in the order written, and the result is compared once, as a whole.</p>
+<h3 id="accepting-a-known-warning">Accepting a Known Warning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Any <code>WARN</code> or <code>ERROR</code> fails a build unless it is listed in a baseline. These are consulted and their entries unioned:</p>
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Holds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>tests/warnings.txt</code></td>
+      <td>theme-wide, mostly Hugo deprecations</td>
+    </tr>
+    <tr>
+      <td><code>tests/sites/&lt;site&gt;/warnings.txt</code></td>
+      <td>what a site&rsquo;s own content provokes</td>
+    </tr>
+    <tr>
+      <td><code>tests/cases/&lt;case&gt;/warnings.txt</code></td>
+      <td>what a configuration provokes</td>
+    </tr>
+  </tbody>
+</table>
+<p>A site&rsquo;s file is checked against the build of that site, so what the docs provoke applies wherever the docs are built. Each entry is a substring; a warning containing it is accepted.</p>
+<p>These baselines record outstanding work, not noise to be silenced. Adding an entry means consciously accepting a defect, so delete it as soon as the underlying issue is fixed and let a regression fail the suite again.</p>
+<h2 id="building-a-site-outside-the-suite">Building a Site Outside the Suite<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>A site that is not a case - a user&rsquo;s site attached to an issue, say - can still be built the way the suite would build it. Install the tool once as a global command:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> hugo-theme-relearn-infra
+</span></span><span class="line"><span class="cl">npm install -g .</span></span></code></pre></div>
+<p>The global command links to the checkout, so it always runs the current state of the infra repository. Then run it from the site&rsquo;s directory, the one holding <code>content/</code>:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">test-hugo
+</span></span><span class="line"><span class="cl">test-hugo min
+</span></span><span class="line"><span class="cl">test-hugo 0.150.0</span></span></code></pre></div>
+<p>The argument selects the Hugo version through hvm, defaulting to <code>latest</code>. The theme&rsquo;s <code>testing</code> configuration is layered onto the site&rsquo;s own, so the output is deterministic, and the result lands in a <code>public.&lt;theme version&gt;+hugo.&lt;hugo version&gt;</code> directory inside the site. Beside the generated files it holds <code>metrics.log</code>, Hugo&rsquo;s log with template metrics, and <code>dir.log</code>, a list of every generated file - so two runs against different theme or Hugo versions diff directly.</p>
+<p>Nothing is compared or stored; reading the difference is up to you.</p>
+<h2 id="continuous-integration">Continuous Integration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This repository runs the suite on every branch and every pull request, and nightly against the latest Hugo release - which is how a Hugo change that breaks the theme is found in CI rather than in an issue report. The infra repository runs nothing; one run tests the pair, and this is where it happens.</p>
+<p>That is why a change spanning both repositories is pushed to infra first, then here, and why a change to the suite alone has to be started by hand: see <a href="/hugo-theme-relearn/development/developing/index.html#working-across-both-repositories">Developing</a>.</p>
+<p>The suite never releases, deploys or publishes anything.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/explanation/index.html">Explanation</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="8.1.0 (2025-10-05) Change Change Th&#39; children shortcode has learned t&#39; show its children &#39;n a nice card layout.
+This required t&#39; deprecate th&#39; containerstyle an&#39; style parameter &#39;n favor o&#39; th&#39; new type parameter. Yer build will succeed as before but will give ye detailed warnings how t&#39; migrate yer old sett&#39;ns t&#39; th&#39; new fer each occurrence.
+If ye haven’t set containerstyle or style no changes be necessary. If ye used
+containerstyle=ul or style=li now use type=tree style=h* now use type=list any other containerstyle or style now use type=flat If ye want t&#39; use th&#39; new card layout, use type=card.
+Change Th&#39; externalLinkTarget config option has changed its default from _blank t&#39; _self caus&#39;n external links by default t&#39; be opened &#39;n th&#39; same tab.
+If ye want t&#39; get back t&#39; th&#39; previous behavior o&#39; open&#39;n external links &#39;n a new tab, set externalLinkTarget=&#39;_blank&#39; &#39;n yer hugo.toml.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 8.1 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta name="twitter:description" content="8.1.0 (2025-10-05) Change Change Th&#39; children shortcode has learned t&#39; show its children &#39;n a nice card layout.
+This required t&#39; deprecate th&#39; containerstyle an&#39; style parameter &#39;n favor o&#39; th&#39; new type parameter. Yer build will succeed as before but will give ye detailed warnings how t&#39; migrate yer old sett&#39;ns t&#39; th&#39; new fer each occurrence.
+If ye haven’t set containerstyle or style no changes be necessary. If ye used
+containerstyle=ul or style=li now use type=tree style=h* now use type=list any other containerstyle or style now use type=flat If ye want t&#39; use th&#39; new card layout, use type=card.
+Change Th&#39; externalLinkTarget config option has changed its default from _blank t&#39; _self caus&#39;n external links by default t&#39; be opened &#39;n th&#39; same tab.
+If ye want t&#39; get back t&#39; th&#39; previous behavior o&#39; open&#39;n external links &#39;n a new tab, set externalLinkTarget=&#39;_blank&#39; &#39;n yer hugo.toml.">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/8/1/index.html">
+    <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:title" content="Version 8.1 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:description" content="8.1.0 (2025-10-05) Change Change Th&#39; children shortcode has learned t&#39; show its children &#39;n a nice card layout.
+This required t&#39; deprecate th&#39; containerstyle an&#39; style parameter &#39;n favor o&#39; th&#39; new type parameter. Yer build will succeed as before but will give ye detailed warnings how t&#39; migrate yer old sett&#39;ns t&#39; th&#39; new fer each occurrence.
+If ye haven’t set containerstyle or style no changes be necessary. If ye used
+containerstyle=ul or style=li now use type=tree style=h* now use type=list any other containerstyle or style now use type=flat If ye want t&#39; use th&#39; new card layout, use type=card.
+Change Th&#39; externalLinkTarget config option has changed its default from _blank t&#39; _self caus&#39;n external links by default t&#39; be opened &#39;n th&#39; same tab.
+If ye want t&#39; get back t&#39; th&#39; previous behavior o&#39; open&#39;n external links &#39;n a new tab, set externalLinkTarget=&#39;_blank&#39; &#39;n yer hugo.toml.">
+    <meta property="og:locale" content="art_x_pir">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Introduction">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 8.1 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta itemprop="description" content="8.1.0 (2025-10-05) Change Change Th&#39; children shortcode has learned t&#39; show its children &#39;n a nice card layout.
+This required t&#39; deprecate th&#39; containerstyle an&#39; style parameter &#39;n favor o&#39; th&#39; new type parameter. Yer build will succeed as before but will give ye detailed warnings how t&#39; migrate yer old sett&#39;ns t&#39; th&#39; new fer each occurrence.
+If ye haven’t set containerstyle or style no changes be necessary. If ye used
+containerstyle=ul or style=li now use type=tree style=h* now use type=list any other containerstyle or style now use type=flat If ye want t&#39; use th&#39; new card layout, use type=card.
+Change Th&#39; externalLinkTarget config option has changed its default from _blank t&#39; _self caus&#39;n external links by default t&#39; be opened &#39;n th&#39; same tab.
+If ye want t&#39; get back t&#39; th&#39; previous behavior o&#39; open&#39;n external links &#39;n a new tab, set externalLinkTarget=&#39;_blank&#39; &#39;n yer hugo.toml.">
+    <meta itemprop="wordCount" content="174">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 8.1 :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/8/1/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/8/1/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/8/1/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/8/1/index.html" rel="canonical" type="text/html" title="Version 8.1 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.7580c3ef100d3c212c4ed1b24eee45bfd6b1809579ac444fe1a9db2ac9e29a00.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/introduction/releasenotes/8/1/index.html",
+      "relBasePath": "../../../../..",
+      "relBaseUri": "../../../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_view": "Rrreset view",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/introduction/releasenotes/8/1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#8-1-0">8.1.0 (2025-10-05)</a>
+      <ul>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 8 &gt; Version 8.1" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html"><span itemprop="name">Version 8</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 8.1</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/8/1.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/8/1/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html" title="Version 8 (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/7/index.html" title="Version 7 (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-81">Version 8.1</h1>
+See the <a href="/hugo-theme-relearn/pir/introduction/changelog/8/1/index.html">changelog of this version</a> for a detailed list of changes.
+<hr>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.126.3</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+<h2 id="8-1-0">8.1.0 (2025-10-05)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> has learned t' show its children 'n a nice card layout.</p>
+<p>This required t' deprecate th' <code>containerstyle</code> an' <code>style</code> parameter 'n favor o' th' new <code>type</code> parameter. Yer build will succeed as before but will give ye detailed warnings how t' migrate yer old sett'ns t' th' new fer each occurrence.</p>
+<p>If ye haven&rsquo;t set <code>containerstyle</code> or <code>style</code> no changes be necessary. If ye used</p>
+<ul>
+<li><code>containerstyle=ul</code> or <code>style=li</code> now use <code>type=tree</code></li>
+<li><code>style=h*</code> now use <code>type=list</code></li>
+<li>any other <code>containerstyle</code> or <code>style</code> now use <code>type=flat</code></li>
+</ul>
+<p>If ye want t' use th' new card layout, use <code>type=card</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' <code>externalLinkTarget</code> config option has changed its default from <code>_blank</code> t' <code>_self</code> caus'n external links by default t' be opened 'n th' same tab.</p>
+<p>If ye want t' get back t' th' previous behavior o' open'n external links 'n a new tab, set <code>externalLinkTarget='_blank'</code> 'n yer <code>hugo.toml</code>.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' theme now supports cards wit' th' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html#single-card"><code>card</code> shortcode</a> an' th' correspond'n <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html"><code>cards</code> shortcode</a>.</p>
+<p>See them 'n action on th' <a href="/hugo-theme-relearn/pir/shortcodes/index.html">shorrrtcodes overview plank</a>.</p>
+</li>
+</ul>
+ 
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

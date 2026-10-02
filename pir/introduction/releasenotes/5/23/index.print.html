@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="5.23.0 (2023-11-03) Change Change Wit&#39; 0.120.0 th&#39; author sett&#39;ns move into th&#39; [params] array &#39;n yer hugo.toml. Because this collides wit&#39; th&#39; previous way, th&#39; theme expected author informat&#39;n, it now adheres t&#39; Cap&#39;n Hugo standards an&#39; prints out a warning dur&#39;n built if someth&#39;n be wrong.
+Change yer previous sett&#39;n from
+hugo. toml yaml json [params] author = &#39;Hugo&#39; params: author: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: &#34;Hugo&#34; } } t&#39;
+hugo. toml yaml json [params] [params.author] name = &#39;Hugo&#39; params: author: name: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: { &#34;name&#34;: &#34;Hugo&#34; } } } Change Taxonomy term planks now add th&#39; breadcrumb fer each listed plank. If this gets too crowded fer ye, ye can turn th&#39; breadcrumbs off &#39;n yer hugo.toml by add&#39;n disableTermBreadcrumbs=true.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 5.23 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta name="twitter:description" content="5.23.0 (2023-11-03) Change Change Wit&#39; 0.120.0 th&#39; author sett&#39;ns move into th&#39; [params] array &#39;n yer hugo.toml. Because this collides wit&#39; th&#39; previous way, th&#39; theme expected author informat&#39;n, it now adheres t&#39; Cap&#39;n Hugo standards an&#39; prints out a warning dur&#39;n built if someth&#39;n be wrong.
+Change yer previous sett&#39;n from
+hugo. toml yaml json [params] author = &#39;Hugo&#39; params: author: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: &#34;Hugo&#34; } } t&#39;
+hugo. toml yaml json [params] [params.author] name = &#39;Hugo&#39; params: author: name: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: { &#34;name&#34;: &#34;Hugo&#34; } } } Change Taxonomy term planks now add th&#39; breadcrumb fer each listed plank. If this gets too crowded fer ye, ye can turn th&#39; breadcrumbs off &#39;n yer hugo.toml by add&#39;n disableTermBreadcrumbs=true.">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/5/23/index.html">
+    <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:title" content="Version 5.23 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:description" content="5.23.0 (2023-11-03) Change Change Wit&#39; 0.120.0 th&#39; author sett&#39;ns move into th&#39; [params] array &#39;n yer hugo.toml. Because this collides wit&#39; th&#39; previous way, th&#39; theme expected author informat&#39;n, it now adheres t&#39; Cap&#39;n Hugo standards an&#39; prints out a warning dur&#39;n built if someth&#39;n be wrong.
+Change yer previous sett&#39;n from
+hugo. toml yaml json [params] author = &#39;Hugo&#39; params: author: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: &#34;Hugo&#34; } } t&#39;
+hugo. toml yaml json [params] [params.author] name = &#39;Hugo&#39; params: author: name: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: { &#34;name&#34;: &#34;Hugo&#34; } } } Change Taxonomy term planks now add th&#39; breadcrumb fer each listed plank. If this gets too crowded fer ye, ye can turn th&#39; breadcrumbs off &#39;n yer hugo.toml by add&#39;n disableTermBreadcrumbs=true.">
+    <meta property="og:locale" content="art_x_pir">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Introduction">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 5.23 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta itemprop="description" content="5.23.0 (2023-11-03) Change Change Wit&#39; 0.120.0 th&#39; author sett&#39;ns move into th&#39; [params] array &#39;n yer hugo.toml. Because this collides wit&#39; th&#39; previous way, th&#39; theme expected author informat&#39;n, it now adheres t&#39; Cap&#39;n Hugo standards an&#39; prints out a warning dur&#39;n built if someth&#39;n be wrong.
+Change yer previous sett&#39;n from
+hugo. toml yaml json [params] author = &#39;Hugo&#39; params: author: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: &#34;Hugo&#34; } } t&#39;
+hugo. toml yaml json [params] [params.author] name = &#39;Hugo&#39; params: author: name: Cap&#39;n Hugo { &#34;params&#34;: { &#34;author&#34;: { &#34;name&#34;: &#34;Hugo&#34; } } } Change Taxonomy term planks now add th&#39; breadcrumb fer each listed plank. If this gets too crowded fer ye, ye can turn th&#39; breadcrumbs off &#39;n yer hugo.toml by add&#39;n disableTermBreadcrumbs=true.">
+    <meta itemprop="wordCount" content="520">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 5.23 :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/5/23/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/5/23/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/5/23/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/5/23/index.html" rel="canonical" type="text/html" title="Version 5.23 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.7580c3ef100d3c212c4ed1b24eee45bfd6b1809579ac444fe1a9db2ac9e29a00.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/introduction/releasenotes/5/23/index.html",
+      "relBasePath": "../../../../..",
+      "relBaseUri": "../../../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_view": "Rrreset view",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/introduction/releasenotes/5/23/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#5-23-0">5.23.0 (2023-11-03)</a>
+      <ul>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 5 &gt; Version 5.23" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/5/index.html"><span itemprop="name">Version 5</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 5.23</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/5/23.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/5/23/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/5/index.html" title="Version 5 (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/4/index.html" title="Version 4 (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-523">Version 5.23</h1>
+See the <a href="/hugo-theme-relearn/pir/introduction/changelog/5/23/index.html">changelog of this version</a> for a detailed list of changes.
+<hr>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.95.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+<h2 id="5-23-0">5.23.0 (2023-11-03)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Wit' <span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.120.0</span></span> th' author sett'ns move into th' <code>[params]</code> array 'n yer <code>hugo.toml</code>. Because this collides wit' th' previous way, th' theme expected author informat'n, it now adheres t' Cap'n Hugo standards an' prints out a warning dur'n built if someth'n be wrong.</p>
+<p>Change yer previous sett'n from</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">hugo.</div>
+    <button
+      aria-controls="R-tab-id-17b7290e61642538f8c5a13b7dbaa7a7" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-83191c01b18dfb5102d4dca10586c662" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-e6e1fd8f0169f75c23515b838280ce98" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-17b7290e61642538f8c5a13b7dbaa7a7"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">author</span> <span class="p">=</span> <span class="s1">&#39;Hugo&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-83191c01b18dfb5102d4dca10586c662"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">Cap'n Hugo</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-e6e1fd8f0169f75c23515b838280ce98"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;author&#34;</span><span class="p">:</span> <span class="s2">&#34;Hugo&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>t'</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">hugo.</div>
+    <button
+      aria-controls="R-tab-id-0886aa63e0fb3e4b7b05dcbdf432a7f5" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-27e55b5eacd37c78606fc7d83367efa0" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-6d6ed14f0b1ee0cf252be9552128176f" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-0886aa63e0fb3e4b7b05dcbdf432a7f5"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Hugo&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-27e55b5eacd37c78606fc7d83367efa0"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cap'n Hugo</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-6d6ed14f0b1ee0cf252be9552128176f"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;author&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Hugo&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Taxonomy <a href="https://gohugo.io/content-management/taxonomies#add-custom-metadata-to-a-taxonomy-or-term" rel="external" target="_self">term planks</a> now add th' breadcrumb fer each listed plank. If this gets too crowded fer ye, ye can turn th' breadcrumbs off 'n yer <code>hugo.toml</code> by add'n <code>disableTermBreadcrumbs=true</code>.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Taxonomy an' term planks be now allowed t' contain rrrambl'n. This be added inbetween th' title an' th' plank list.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> It be now poss'ble t' print custom taxonomies anywhere 'n yer plank. <a href="/hugo-theme-relearn/pir/configuration/customization/taxonomy/index.html#setting-up-custom-taxonomies">See th' docs</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> It be now poss'ble t' adjust th' menu width fer yer whole ship. <a href="/hugo-theme-relearn/pir/configuration/sidebar/width/index.html">See th' docs</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> This release adds social media meta tags fer th' Open Graph protocol an' Twitter Cards t' yer ship. <a href="/hugo-theme-relearn/pir/authoring/meta/index.html">See th' docs</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> This release comes wit' additional sort options fer th' menu an' th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a>. Both will now accept th' follow'n values: <code>weight</code>, <code>title</code>, <code>linktitle</code>, <code>modifieddate</code>, <code>expirydate</code>, <code>publishdate</code>, <code>date</code>, <code>length</code> or <code>default</code> (adher'n t' Hugo&rsquo;s default sort order).</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' theme now provides a mechanism t' board further JavaScript dependencies defined by ye only if it be needed. This comes 'n handy if ye want t' add own shorrrtcodes that depend on additional JavaScript code t' be boarded. <a href="/hugo-theme-relearn/pir/configuration/customization/extending/index.html">See th' docs</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' theme has updated its Merrrmaid dependency t' 10.6.0. This adds support fer th' <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#xychart">xychart type</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> This release adds portable Marrrkdown links.</p>
+<p>Previously it was not poss'ble t' use pure Marrrkdown links 'n a configurat'n independent way t' link t' planks inside o' yer project. It always required ye t' know how yer <code>uglyURLs</code> sett'n be, wheather ye link t' a plank or plank bundle an' 'n case o' relative links if yer current plank be a plank or plank bundle. (eg. <code>[generator](generator/index.html)</code> vs. <code>[generator](generator.html)</code>). This be a hassle as ye have t' change these links manually once ye change yer <code>uglyURLs</code> sett'n or change th' type o' a plank.</p>
+<p>Ye could work around this by us'n th' <code>relref</code> shortcode (eg <code>[generator]({{% relref &quot;../generator&quot; %}})</code>) which works but results 'n non-portable Marrrkdown.</p>
+<p>Now it&rsquo;s poss'ble t' use th' same path o' a call t' <code>relref</code> 'n a plain Marrrkdown link (eg <code>[generator](../generator)</code>). This be independent o' any configurat'n sett'ns or th' plank types involved 'n link'n. Avast, that this requires yer links t' be given without any extension, so <code>[generator](generator/index.html)</code> will work as before.</p>
+<p>Th' follow'n types o' link'n be supported:</p>
+<table>
+  <thead>
+    <tr>
+      <th>link</th>
+      <th>descript'n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>[generator](en/configuration/branding/generator)</code></td>
+      <td>absolute from yer project root (multilang)</td>
+    </tr>
+    <tr>
+      <td><code>[generator](/en/configuration/branding/generator)</code></td>
+      <td>absolute from yer project root (multilang)</td>
+    </tr>
+    <tr>
+      <td><code>[generator](configuration/branding/generator)</code></td>
+      <td>absolute from yer current language root</td>
+    </tr>
+    <tr>
+      <td><code>[generator](/configuration/branding/generator)</code></td>
+      <td>absolute from yer current language root</td>
+    </tr>
+    <tr>
+      <td><code>[generator](./../generator)</code></td>
+      <td>relative from th' current plank</td>
+    </tr>
+    <tr>
+      <td><code>[generator](../generator)</code></td>
+      <td>relative from th' current plank</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+ 
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="9.2.0 (XXXX-XX-XX) Cap&#39;n Hugo 0.166.0 0.166.0 This release requires a newer Cap&#39;n Hugo version. Change Change Th&#39; new planks shortcode lists planks o&#39; yer ship. Besides th&#39; layouts known from th&#39; now deprecated children shortcode, it can list descendants, sibl&#39;ns or ancestors, filter them an&#39; group an&#39; order them by any field or front matter parameter o&#39; a plank.
+Th&#39; children shortcode still works but issues a deprecat&#39;n warning fer each use, nam&#39;n th&#39; planks call that replaces it. See th&#39; migrat&#39;n instruct&#39;ns.
+Wit&#39; type=group, th&#39; children shortcode no longer shows a multi-column layout. If ye want t&#39; restore th&#39; previous behavior, replace it by th&#39; planks shortcode wit&#39; columns=3.
+Change Th&#39; new callout shortcode replaces th&#39; now deprecated notice shortcode, match&#39;n th&#39; name o&#39; th&#39; Marrrkdown callouts it shares its boxes wit&#39;. Th&#39; parameters be unchanged.
+Th&#39; notice shortcode still works but issues a deprecat&#39;n warning fer each use. Rename yer calls t&#39; callout. See th&#39; migrat&#39;n instruct&#39;ns.
+Change Hugo’s built-in details shortcode replaces th&#39; now deprecated expand shortcode, so yer rrrambl&#39;n stays portable t&#39; other themes.
+Th&#39; expand shortcode still works but issues a deprecat&#39;n warning fer each use. Th&#39; parameters o&#39; th&#39; details shortcode be named differently, so a call can not just be renamed. See th&#39; migrat&#39;n instruct&#39;ns.
+If ye already use th&#39; details shortcode, it now behaves like th&#39; one built into Cap&#39;n Hugo. Its rrrambl&#39;n be rendered as Marrrkdown if called wit&#39; {{&lt; details &gt;}}, an&#39; th&#39; title parameter be honored. If yer rrrambl&#39;n be HTML or contains other shorrrtcodes, set th&#39; new raw=true parameter t&#39; have it written as it be.
+Change Th&#39; math shortcode now renders yer formulae us&#39;n Hugo’s built-in KaTeX while yer ship be built, instead o&#39; th&#39; MathJax library &#39;n th&#39; browser.
+Th&#39; theme finds yer formulae by th&#39; delimiters o&#39; Hugo’s Passthrough configurat&#39;n. If yer ship doesn’t have it yet, add it, otherwise their delimited formulae be not rendered. Rrrambl&#39;n without delimiters be rendered as one formula regardless fer codefence, shortcode an&#39; partial rules.
+By default, formulae be written as MathML an&#39; displayed by th&#39; browser. If ye prefer th&#39; look o&#39; KaTeX th&#39; same &#39;n every browser, set math.output=&#39;htmlAndMathml&#39;.
+Th&#39; options mathJaxInitialize an&#39; customMathJaxURL be gone. Instead, ye can set any KaTeX option &#39;n math. If ye defined yer own macros, move them t&#39; math.macros.
+KaTeX doesn’t know every command o&#39; MathJax. A formula it can not render be written as its source an&#39; reported as a warning &#39;n yer build.
+Change Marrrkdown tables can now merge cells, us&#39;n th&#39; rules o&#39; Marrrkdown Preview Enhanced. A cell contain&#39;n only &gt; merges into th&#39; cell t&#39; its right, a cell contain&#39;n only ^ into th&#39; cell above.
+If one o&#39; yer tables already has such a cell an&#39; should show th&#39; character itself, escape it wit&#39; two backslashes, like \\&gt;.
+Change Th&#39; list&#39;ns o&#39; taxonomy an&#39; term planks be now configured by params.pages &#39;n their front matter, us&#39;n th&#39; parameters o&#39; th&#39; planks shortcode. Th&#39; former params.children be still honored as long as th&#39; children shortcode exists.
+Change Th&#39; front matter params.pages be now honored on every plank, not only on taxonomy an&#39; term planks. Together wit&#39; Hugo’s cascade, ye can give all list&#39;ns o&#39; a subtree th&#39; same look.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 9.2 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta name="twitter:description" content="9.2.0 (XXXX-XX-XX) Cap&#39;n Hugo 0.166.0 0.166.0 This release requires a newer Cap&#39;n Hugo version. Change Change Th&#39; new planks shortcode lists planks o&#39; yer ship. Besides th&#39; layouts known from th&#39; now deprecated children shortcode, it can list descendants, sibl&#39;ns or ancestors, filter them an&#39; group an&#39; order them by any field or front matter parameter o&#39; a plank.
+Th&#39; children shortcode still works but issues a deprecat&#39;n warning fer each use, nam&#39;n th&#39; planks call that replaces it. See th&#39; migrat&#39;n instruct&#39;ns.
+Wit&#39; type=group, th&#39; children shortcode no longer shows a multi-column layout. If ye want t&#39; restore th&#39; previous behavior, replace it by th&#39; planks shortcode wit&#39; columns=3.
+Change Th&#39; new callout shortcode replaces th&#39; now deprecated notice shortcode, match&#39;n th&#39; name o&#39; th&#39; Marrrkdown callouts it shares its boxes wit&#39;. Th&#39; parameters be unchanged.
+Th&#39; notice shortcode still works but issues a deprecat&#39;n warning fer each use. Rename yer calls t&#39; callout. See th&#39; migrat&#39;n instruct&#39;ns.
+Change Hugo’s built-in details shortcode replaces th&#39; now deprecated expand shortcode, so yer rrrambl&#39;n stays portable t&#39; other themes.
+Th&#39; expand shortcode still works but issues a deprecat&#39;n warning fer each use. Th&#39; parameters o&#39; th&#39; details shortcode be named differently, so a call can not just be renamed. See th&#39; migrat&#39;n instruct&#39;ns.
+If ye already use th&#39; details shortcode, it now behaves like th&#39; one built into Cap&#39;n Hugo. Its rrrambl&#39;n be rendered as Marrrkdown if called wit&#39; {{&lt; details &gt;}}, an&#39; th&#39; title parameter be honored. If yer rrrambl&#39;n be HTML or contains other shorrrtcodes, set th&#39; new raw=true parameter t&#39; have it written as it be.
+Change Th&#39; math shortcode now renders yer formulae us&#39;n Hugo’s built-in KaTeX while yer ship be built, instead o&#39; th&#39; MathJax library &#39;n th&#39; browser.
+Th&#39; theme finds yer formulae by th&#39; delimiters o&#39; Hugo’s Passthrough configurat&#39;n. If yer ship doesn’t have it yet, add it, otherwise their delimited formulae be not rendered. Rrrambl&#39;n without delimiters be rendered as one formula regardless fer codefence, shortcode an&#39; partial rules.
+By default, formulae be written as MathML an&#39; displayed by th&#39; browser. If ye prefer th&#39; look o&#39; KaTeX th&#39; same &#39;n every browser, set math.output=&#39;htmlAndMathml&#39;.
+Th&#39; options mathJaxInitialize an&#39; customMathJaxURL be gone. Instead, ye can set any KaTeX option &#39;n math. If ye defined yer own macros, move them t&#39; math.macros.
+KaTeX doesn’t know every command o&#39; MathJax. A formula it can not render be written as its source an&#39; reported as a warning &#39;n yer build.
+Change Marrrkdown tables can now merge cells, us&#39;n th&#39; rules o&#39; Marrrkdown Preview Enhanced. A cell contain&#39;n only &gt; merges into th&#39; cell t&#39; its right, a cell contain&#39;n only ^ into th&#39; cell above.
+If one o&#39; yer tables already has such a cell an&#39; should show th&#39; character itself, escape it wit&#39; two backslashes, like \\&gt;.
+Change Th&#39; list&#39;ns o&#39; taxonomy an&#39; term planks be now configured by params.pages &#39;n their front matter, us&#39;n th&#39; parameters o&#39; th&#39; planks shortcode. Th&#39; former params.children be still honored as long as th&#39; children shortcode exists.
+Change Th&#39; front matter params.pages be now honored on every plank, not only on taxonomy an&#39; term planks. Together wit&#39; Hugo’s cascade, ye can give all list&#39;ns o&#39; a subtree th&#39; same look.">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/2/index.html">
+    <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:title" content="Version 9.2 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:description" content="9.2.0 (XXXX-XX-XX) Cap&#39;n Hugo 0.166.0 0.166.0 This release requires a newer Cap&#39;n Hugo version. Change Change Th&#39; new planks shortcode lists planks o&#39; yer ship. Besides th&#39; layouts known from th&#39; now deprecated children shortcode, it can list descendants, sibl&#39;ns or ancestors, filter them an&#39; group an&#39; order them by any field or front matter parameter o&#39; a plank.
+Th&#39; children shortcode still works but issues a deprecat&#39;n warning fer each use, nam&#39;n th&#39; planks call that replaces it. See th&#39; migrat&#39;n instruct&#39;ns.
+Wit&#39; type=group, th&#39; children shortcode no longer shows a multi-column layout. If ye want t&#39; restore th&#39; previous behavior, replace it by th&#39; planks shortcode wit&#39; columns=3.
+Change Th&#39; new callout shortcode replaces th&#39; now deprecated notice shortcode, match&#39;n th&#39; name o&#39; th&#39; Marrrkdown callouts it shares its boxes wit&#39;. Th&#39; parameters be unchanged.
+Th&#39; notice shortcode still works but issues a deprecat&#39;n warning fer each use. Rename yer calls t&#39; callout. See th&#39; migrat&#39;n instruct&#39;ns.
+Change Hugo’s built-in details shortcode replaces th&#39; now deprecated expand shortcode, so yer rrrambl&#39;n stays portable t&#39; other themes.
+Th&#39; expand shortcode still works but issues a deprecat&#39;n warning fer each use. Th&#39; parameters o&#39; th&#39; details shortcode be named differently, so a call can not just be renamed. See th&#39; migrat&#39;n instruct&#39;ns.
+If ye already use th&#39; details shortcode, it now behaves like th&#39; one built into Cap&#39;n Hugo. Its rrrambl&#39;n be rendered as Marrrkdown if called wit&#39; {{&lt; details &gt;}}, an&#39; th&#39; title parameter be honored. If yer rrrambl&#39;n be HTML or contains other shorrrtcodes, set th&#39; new raw=true parameter t&#39; have it written as it be.
+Change Th&#39; math shortcode now renders yer formulae us&#39;n Hugo’s built-in KaTeX while yer ship be built, instead o&#39; th&#39; MathJax library &#39;n th&#39; browser.
+Th&#39; theme finds yer formulae by th&#39; delimiters o&#39; Hugo’s Passthrough configurat&#39;n. If yer ship doesn’t have it yet, add it, otherwise their delimited formulae be not rendered. Rrrambl&#39;n without delimiters be rendered as one formula regardless fer codefence, shortcode an&#39; partial rules.
+By default, formulae be written as MathML an&#39; displayed by th&#39; browser. If ye prefer th&#39; look o&#39; KaTeX th&#39; same &#39;n every browser, set math.output=&#39;htmlAndMathml&#39;.
+Th&#39; options mathJaxInitialize an&#39; customMathJaxURL be gone. Instead, ye can set any KaTeX option &#39;n math. If ye defined yer own macros, move them t&#39; math.macros.
+KaTeX doesn’t know every command o&#39; MathJax. A formula it can not render be written as its source an&#39; reported as a warning &#39;n yer build.
+Change Marrrkdown tables can now merge cells, us&#39;n th&#39; rules o&#39; Marrrkdown Preview Enhanced. A cell contain&#39;n only &gt; merges into th&#39; cell t&#39; its right, a cell contain&#39;n only ^ into th&#39; cell above.
+If one o&#39; yer tables already has such a cell an&#39; should show th&#39; character itself, escape it wit&#39; two backslashes, like \\&gt;.
+Change Th&#39; list&#39;ns o&#39; taxonomy an&#39; term planks be now configured by params.pages &#39;n their front matter, us&#39;n th&#39; parameters o&#39; th&#39; planks shortcode. Th&#39; former params.children be still honored as long as th&#39; children shortcode exists.
+Change Th&#39; front matter params.pages be now honored on every plank, not only on taxonomy an&#39; term planks. Together wit&#39; Hugo’s cascade, ye can give all list&#39;ns o&#39; a subtree th&#39; same look.">
+    <meta property="og:locale" content="art_x_pir">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Introduction">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 9.2 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta itemprop="description" content="9.2.0 (XXXX-XX-XX) Cap&#39;n Hugo 0.166.0 0.166.0 This release requires a newer Cap&#39;n Hugo version. Change Change Th&#39; new planks shortcode lists planks o&#39; yer ship. Besides th&#39; layouts known from th&#39; now deprecated children shortcode, it can list descendants, sibl&#39;ns or ancestors, filter them an&#39; group an&#39; order them by any field or front matter parameter o&#39; a plank.
+Th&#39; children shortcode still works but issues a deprecat&#39;n warning fer each use, nam&#39;n th&#39; planks call that replaces it. See th&#39; migrat&#39;n instruct&#39;ns.
+Wit&#39; type=group, th&#39; children shortcode no longer shows a multi-column layout. If ye want t&#39; restore th&#39; previous behavior, replace it by th&#39; planks shortcode wit&#39; columns=3.
+Change Th&#39; new callout shortcode replaces th&#39; now deprecated notice shortcode, match&#39;n th&#39; name o&#39; th&#39; Marrrkdown callouts it shares its boxes wit&#39;. Th&#39; parameters be unchanged.
+Th&#39; notice shortcode still works but issues a deprecat&#39;n warning fer each use. Rename yer calls t&#39; callout. See th&#39; migrat&#39;n instruct&#39;ns.
+Change Hugo’s built-in details shortcode replaces th&#39; now deprecated expand shortcode, so yer rrrambl&#39;n stays portable t&#39; other themes.
+Th&#39; expand shortcode still works but issues a deprecat&#39;n warning fer each use. Th&#39; parameters o&#39; th&#39; details shortcode be named differently, so a call can not just be renamed. See th&#39; migrat&#39;n instruct&#39;ns.
+If ye already use th&#39; details shortcode, it now behaves like th&#39; one built into Cap&#39;n Hugo. Its rrrambl&#39;n be rendered as Marrrkdown if called wit&#39; {{&lt; details &gt;}}, an&#39; th&#39; title parameter be honored. If yer rrrambl&#39;n be HTML or contains other shorrrtcodes, set th&#39; new raw=true parameter t&#39; have it written as it be.
+Change Th&#39; math shortcode now renders yer formulae us&#39;n Hugo’s built-in KaTeX while yer ship be built, instead o&#39; th&#39; MathJax library &#39;n th&#39; browser.
+Th&#39; theme finds yer formulae by th&#39; delimiters o&#39; Hugo’s Passthrough configurat&#39;n. If yer ship doesn’t have it yet, add it, otherwise their delimited formulae be not rendered. Rrrambl&#39;n without delimiters be rendered as one formula regardless fer codefence, shortcode an&#39; partial rules.
+By default, formulae be written as MathML an&#39; displayed by th&#39; browser. If ye prefer th&#39; look o&#39; KaTeX th&#39; same &#39;n every browser, set math.output=&#39;htmlAndMathml&#39;.
+Th&#39; options mathJaxInitialize an&#39; customMathJaxURL be gone. Instead, ye can set any KaTeX option &#39;n math. If ye defined yer own macros, move them t&#39; math.macros.
+KaTeX doesn’t know every command o&#39; MathJax. A formula it can not render be written as its source an&#39; reported as a warning &#39;n yer build.
+Change Marrrkdown tables can now merge cells, us&#39;n th&#39; rules o&#39; Marrrkdown Preview Enhanced. A cell contain&#39;n only &gt; merges into th&#39; cell t&#39; its right, a cell contain&#39;n only ^ into th&#39; cell above.
+If one o&#39; yer tables already has such a cell an&#39; should show th&#39; character itself, escape it wit&#39; two backslashes, like \\&gt;.
+Change Th&#39; list&#39;ns o&#39; taxonomy an&#39; term planks be now configured by params.pages &#39;n their front matter, us&#39;n th&#39; parameters o&#39; th&#39; planks shortcode. Th&#39; former params.children be still honored as long as th&#39; children shortcode exists.
+Change Th&#39; front matter params.pages be now honored on every plank, not only on taxonomy an&#39; term planks. Together wit&#39; Hugo’s cascade, ye can give all list&#39;ns o&#39; a subtree th&#39; same look.">
+    <meta itemprop="wordCount" content="719">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 9.2 :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/2/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/2/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/2/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/2/index.html" rel="canonical" type="text/html" title="Version 9.2 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.7580c3ef100d3c212c4ed1b24eee45bfd6b1809579ac444fe1a9db2ac9e29a00.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/introduction/releasenotes/9/2/index.html",
+      "relBasePath": "../../../../..",
+      "relBaseUri": "../../../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_view": "Rrreset view",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/introduction/releasenotes/9/2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#9-2-0">9.2.0 (XXXX-XX-XX)</a>
+      <ul>
+        <li><a href="#hugo-01660">Cap'n Hugo 0.166.0</a></li>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 9 &gt; Version 9.2" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html"><span itemprop="name">Version 9</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 9.2</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/9/2.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/9/2/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html" title="Version 9 (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html" title="Version 8 (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-92">Version 9.2</h1>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.166.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+<h2 id="9-2-0">9.2.0 (XXXX-XX-XX)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="hugo-01660">Cap'n Hugo 0.166.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.166.0</span></span> This release requires a newer Cap'n Hugo version.</li>
+</ul>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' new <a href="/hugo-theme-relearn/pir/shortcodes/pages/index.html"><code>planks</code> shortcode</a> lists planks o' yer ship. Besides th' layouts known from th' now deprecated <code>children</code> shortcode, it can list descendants, sibl'ns or ancestors, filter them an' group an' order them by any field or front matter parameter o' a plank.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> still works but issues a deprecat'n warning fer each use, nam'n th' <code>planks</code> call that replaces it. See th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html#migration">migrat'n instruct'ns</a>.</p>
+<p>Wit' <code>type=group</code>, th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> no longer shows a multi-column layout. If ye want t' restore th' previous behavior, replace it by th' <code>planks</code> shortcode wit' <code>columns=3</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' new <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html"><code>callout</code> shortcode</a> replaces th' now deprecated <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html"><code>notice</code> shortcode</a>, match'n th' name o' th' Marrrkdown callouts it shares its boxes wit'. Th' parameters be unchanged.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html"><code>notice</code> shortcode</a> still works but issues a deprecat'n warning fer each use. Rename yer calls t' <code>callout</code>. See th' <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html#migration">migrat'n instruct'ns</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Hugo&rsquo;s built-in <a href="/hugo-theme-relearn/pir/shortcodes/details/index.html"><code>details</code> shortcode</a> replaces th' now deprecated <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html"><code>expand</code> shortcode</a>, so yer rrrambl'n stays portable t' other themes.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html"><code>expand</code> shortcode</a> still works but issues a deprecat'n warning fer each use. Th' parameters o' th' <code>details</code> shortcode be named differently, so a call can not just be renamed. See th' <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html#migration">migrat'n instruct'ns</a>.</p>
+<p>If ye already use th' <code>details</code> shortcode, it now behaves like th' one built into Cap'n Hugo. Its rrrambl'n be rendered as Marrrkdown if called wit' <code>{{&lt; details &gt;}}</code>, an' th' <code>title</code> parameter be honored. If yer rrrambl'n be HTML or contains other shorrrtcodes, set th' new <code>raw=true</code> parameter t' have it written as it be.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html"><code>math</code> shortcode</a> now renders yer formulae us'n Hugo&rsquo;s built-in KaTeX while yer ship be built, instead o' th' MathJax library 'n th' browser.</p>
+<p>Th' theme finds yer formulae by th' delimiters o' Hugo&rsquo;s <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#passthrough-configuration">Passthrough configurat'n</a>. If yer ship doesn&rsquo;t have it yet, add it, otherwise their delimited formulae be not rendered. Rrrambl'n without delimiters be rendered as one formula regardless fer codefence, shortcode an' partial rules.</p>
+<p>By default, formulae be written as MathML an' displayed by th' browser. If ye prefer th' look o' KaTeX th' same 'n every browser, set <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#output-of-the-formulae"><code>math.output='htmlAndMathml'</code></a>.</p>
+<p>Th' options <code>mathJaxInitialize</code> an' <code>customMathJaxURL</code> be gone. Instead, ye can set <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#providing-options-for-katex">any KaTeX option</a> 'n <code>math</code>. If ye defined yer own macros, move them t' <code>math.macros</code>.</p>
+<p>KaTeX doesn&rsquo;t know every command o' MathJax. A formula it can not render be written as its source an' reported as a warning 'n yer build.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Marrrkdown tables can now <a href="/hugo-theme-relearn/pir/authoring/markdown/index.html#merged-cells">merge cells</a>, us'n th' rules o' Marrrkdown Preview Enhanced. A cell contain'n only <code>&gt;</code> merges into th' cell t' its right, a cell contain'n only <code>^</code> into th' cell above.</p>
+<p>If one o' yer tables already has such a cell an' should show th' character itself, escape it wit' two backslashes, like <code>\\&gt;</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' list'ns o' <a href="/hugo-theme-relearn/pir/authoring/taxterm/index.html">taxonomy an' term planks</a> be now configured by <code>params.pages</code> 'n their front matter, us'n th' parameters o' th' <code>planks</code> shortcode. Th' former <code>params.children</code> be still honored as long as th' <code>children</code> shortcode exists.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Th' front matter <code>params.pages</code> be now honored on every plank, not only on taxonomy an' term planks. Together wit' Hugo&rsquo;s <code>cascade</code>, ye can give all list'ns o' a subtree th' same look.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html#with-hint"><code>callout</code> shortcode</a> has a new <code>hint</code> parameter t' show a tooltip fer th' title o' th' box.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Marrrkdown blockquotes can <a href="/hugo-theme-relearn/pir/authoring/markdown/index.html#quotations-with-attribution">name th' author an' th' source o' th' quotat'n</a> wit' th' new <code>author</code>, <code>source</code> an' <code>href</code> Marrrkdown attributes.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html"><code>cards</code> shortcode</a> has a new <code>columns</code> parameter t' set th' number o' columns 'n full width mode.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/resources/index.html"><code>resources</code> shortcode</a> has a new <code>pageref</code> parameter t' list th' resources o' another plank bundle.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' theme writes no inline JavaScript anymore, so yer ship can be served wit' a strict <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html">Rrrambl'n Security Policy</a>. On request, it also adds a <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/csp/index.html#subresource-integrity">subresource integrity</a> t' its scripts an' stylesheets. Th' <a href="/hugo-theme-relearn/pir/shortcodes/button/index.html#button-with-own-action"><code>button</code></a> an' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html#card-with-own-action"><code>card</code></a> shorrrtcodes an' <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html#button">topbar buttons</a> have a new <code>action</code> parameter t' run yer own code without inline JavaScript.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Th' theme now ships a machine-read'ble <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/sbom/index.html">SBOM</a> at <code>sbom.cdx.json</code>, list'n every third-party resource it can publish wit' yer ship, each wit' a license, a digest o' th' files th' theme ships an' - whar' upstream publishes them - a version an' a package URL.</p>
+</li>
+</ul>
+ 
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

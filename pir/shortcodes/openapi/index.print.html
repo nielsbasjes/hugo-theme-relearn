@@ -1,177 +1,479 @@
 <!DOCTYPE html>
-<html lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article">
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.134.2">
-    <meta name="generator" content="Relearn 6.4.0+tip">
-    <meta name="description" content="Adds UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="description" content="UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/featured.png">
     <meta name="twitter:title" content="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
-    <meta name="twitter:description" content="Adds UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
-    <meta property="og:url" content="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html">
+    <meta name="twitter:description" content="UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html">
     <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
     <meta property="og:title" content="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
-    <meta property="og:description" content="Adds UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
+    <meta property="og:description" content="UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
     <meta property="og:locale" content="art_x_pir">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/featured.png">
     <meta itemprop="name" content="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
-    <meta itemprop="description" content="Adds UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
-    <meta itemprop="wordCount" content="148">
-    <meta itemprop="image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="description" content="UI fer yer OpenAPI / Swaggerrr Specificat&#39;ns">
+    <meta itemprop="wordCount" content="514">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/featured.png">
+    <meta itemprop="keywords" content="Howto,Reference,CustomOpenapiURL,Openapi.errorlevel,Openapi.force,CustomOpenapiURL,Openapi.errorlevel,Openapi.force">
     <title>OpenAPI :: Cap&#39;n Hugo Relearrrn Theme</title>
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/openapi/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/openapi/index.html" rel="alternate" hreflang="en">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html" rel="alternate" hreflang="art-x-pir">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html" rel="canonical" type="text/html" title="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/openapi/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/openapi/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/openapi/index.html" rel="canonical" type="text/html" title="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
     <link href="/hugo-theme-relearn/pir/shortcodes/openapi/index.xml" rel="alternate" type="application/rss+xml" title="OpenAPI :: Cap&#39;n Hugo Relearrrn Theme">
-    <link href="/hugo-theme-relearn/images/logo.svg?1726172282" rel="icon" type="image/svg+xml">
-    <link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172282" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172282" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/nucleus.css?1726172282" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/auto-complete.css?1726172282" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/auto-complete.css?1726172282" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar.min.css?1726172282" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/fonts.css?1726172282" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fonts.css?1726172282" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.css?1726172282" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme-relearn-auto.css?1726172282" rel="stylesheet" id="R-variant-style">
-    <link href="/hugo-theme-relearn/css/chroma-relearn-auto.css?1726172282" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/hugo-theme-relearn/css/variant.css?1726172282" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/print.css?1726172282" rel="stylesheet" media="print">
-    <link href="/hugo-theme-relearn/css/format-print.css?1726172282" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/variant.js?1726172282"></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/mcshelby.github.io\/hugo-theme-relearn';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/hugo-theme-relearn/pir/index.search.js?1726172282";
-      // variant stuff
-      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
-      // translations
-      window.T_Copy_to_clipboard = `Copy t' clipboard`;
-      window.T_Copied_to_clipboard = `Copied t' clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link t' clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link t' clipboard!`;
-      window.T_Reset_view = `Rrreset view`;
-      window.T_View_reset = `View rrreset!`;
-      window.T_No_results_found = `No rrresults found fer "{0}"`;
-      window.T_N_results_found = `{1} rrresults found fer "{0}"`;
-    </script>
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.7580c3ef100d3c212c4ed1b24eee45bfd6b1809579ac444fe1a9db2ac9e29a00.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/shortcodes/openapi/index.html",
+      "relBasePath": "../../..",
+      "relBaseUri": "../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_view": "Rrreset view",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
+       
       #R-body img.bg-white {
         background-color: white;
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/hugo-theme-relearn/pir/shortcodes/openapi/index.html">
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/shortcodes/openapi/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar">
-        <div class="topbar-wrapper">
-          <div class="topbar-sidebar-divider"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#settings">Sett'ns</a>
+      <ul>
+        <li><a href="#enabling-link-warnings">Enabl'n Link Warn'ns</a></li>
+        <li><a href="#loading-an-external-version-of-the-swagger-ui-library">Load'n an External Version o' th' Swagger UI Library</a></li>
+        <li><a href="#force-loading-of-the-swagger-ui-library">Force Load'n o' th' Swagger UI Library</a></li>
+        <li><a href="#setting-a-specific-swagger-ui-theme">Sett'n a Specific Swagger UI Theme</a></li>
+      </ul>
+    </li>
+    <li><a href="#example">Example</a>
+      <ul>
+        <li><a href="#using-local-file">Us'n Local File</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/hugo-theme-relearn/pir/shortcodes/index.html"><span itemprop="name">Shorrrtcodes</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">OpenAPI</span><meta itemprop="position" content="2"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Shorrrtcodes &gt; OpenAPI" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/shortcodes/index.html"><span itemprop="name">Shorrrtcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">OpenAPI</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/pir/shortcodes/notice/index.html" title="Notice (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/openapi/_index.pir.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/pir/shortcodes/resources/index.html" title="Resources (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/shortcodes/openapi/index.print.html" title="Prrrint whole chapterrr (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html" title="Merrrmaid (🡒)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/pir/shortcodes/pages/index.html" title="Pages (🡐)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+      <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
 
 <h1 id="openapi">OpenAPI</h1>
 
-<p>Th' <code>openapi</code> shortcode uses th' <a href="https://github.com/swagger-api/swagger-ui" rel="external" target="_self">Swagger UI</a> library t' display yer OpenAPI / Swagger specificat'ns.</p>
-<h2 id="usage">Usage</h2>
-<p>While th' examples be us'n shorrrtcodes wit' named parameter ye be free t' also call this shortcode from yer own partials.</p>
-<div class="tab-panel" data-tab-group="shortcode-parameter">
+<p>Th' <code>openapi</code> shortcode displays yer OpenAPI / Swagger specificat'ns us'n th' <a href="https://github.com/swagger-api/swagger-ui" rel="external" target="_self">Swagger UI</a> library.</p>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      data-tab-item="shortcode"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('shortcode-parameter','shortcode')"
+      aria-controls="R-tab-id-eff9c449a6ea8d27dca35896aa6e2c04" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
-      <span class="tab-nav-text">shortcode</span>
+      <span class="tab-nav-text">Shortcode</span>
     </button>
     <button
-      data-tab-item="partial"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','partial')"
+      aria-controls="R-tab-id-6d46d54a01fd57714b0fe4a2bd0339a7" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">partial</span>
+      <span class="tab-nav-text">Partial</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      data-tab-item="shortcode"
-      class="tab-content tab-panel-style cstyle initial active">
+      id="R-tab-id-eff9c449a6ea8d27dca35896aa6e2c04"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{&lt;</span> <span class="nx">openapi</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;https://petstore3.openapi.io/api/v3/openapi.json&#34;</span> <span class="p">&gt;}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">openapi</span><span class="w"> </span><span class="nx">src</span><span class="p">=</span><span class="s">&#34;https://petstore3.openapi.io/api/v3/openapi.json&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="partial"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-6d46d54a01fd57714b0fe4a2bd0339a7"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;shortcodes/openapi.html&#34;</span> <span class="p">(</span><span class="nx">dict</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;page&#34;</span> <span class="p">.</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;src&#34;</span>  <span class="s">&#34;https://petstore3.openapi.io/api/v3/openapi.json&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/openapi.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;src&#34;</span><span class="w"> </span><span class="s">&#34;https://petstore3.openapi.io/api/v3/openapi.json&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
-<h3 id="parameter">Parameter</h3>
+<p>If ye want t' print out (or generate a PDF) from yer OpenAPI documentat'n, don&rsquo;t initiate print'n directly from th' plank because th' elements be optimized fer interactive usage 'n a browser.</p>
+<p>Instead, open th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html">print preview</a> 'n yer browser an' initiate print'n from that plank. This plank be optimized fer read'n an' expands most o' th' avail'ble sections.</p>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
-      <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Default</th>
-          <th style="text-align: left">Notes</th>
-      </tr>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
   </thead>
   <tbody>
-      <tr>
-          <td style="text-align: left"><strong>src</strong></td>
-          <td style="text-align: left"><em>&lt;empty&gt;</em></td>
-          <td style="text-align: left">Th' path t' th' t' th' OpenAPI specificat'n resource or URL t' be used. Resource paths adhere t' <a href="https://gohugo.io/methods/page/path/" rel="external" target="_self">Hugo&rsquo;s logical path</a>.</td>
-      </tr>
+    <tr>
+      <td><strong>src</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Th' path t' th' t' th' OpenAPI specificat'n resource or URL t' be used. Resource paths adhere t' <a href="https://gohugo.io/methods/page/path/" rel="external" target="_self">Hugo&rsquo;s logical path</a>.</td>
+    </tr>
   </tbody>
 </table>
-<div class="box notices cstyle note">
-  <div class="box-label">
-    <i class="fa-fw fas fa-exclamation-circle"></i> Avast
+<h2 id="settings">Sett'ns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="enabling-link-warnings">Enabl'n Link Warn'ns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Ye can use <code>openapi.errorlevel</code> t' control what should happen if a local OpenAPI specificat'n link cannot be resolved t' a resource.</p>
+<p>If not set or empty, any unresolved link be written as given into th' result'n output. If set t' <code>warning</code> th' same happens an' an additional warning be printed 'n th' built console. If set t' <code>error</code> an error message be printed an' th' build be aborted.</p>
+<p>Please note that this cannot resolve files inside o' yer <code>static</code> directory. Th' file must be a resource o' th' plank or th' ship.</p>
+<p>Link warnings be also avail'ble fer <a href="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html#enabling-link-and-image-link-warnings">images &amp; links</a> an' th' <a href="/hugo-theme-relearn/pir/shortcodes/include/index.html#enabling-link-warnings">include</a> shortcode.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-7236ea50648bc0f468867ad9203e958d" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-5724bb60aee75056469c57af58ed1228" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-eac186745df0f33f9c8b4684ec6d5720" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
   </div>
-  <div class="box-content">
-<p>If ye want t' print out (or generate a PDF) from yer OpenAPI documentat'n, don&rsquo;t initiate print'n directly from th' plank because th' elements be optimized fer interactive usage 'n a browser.</p>
-<p>Instead, open th' <a href="/hugo-theme-relearn/pir/basics/customization/index.html#activate-print-support">print preview</a> 'n yer browser an' initiate print'n from that plank. This plank be optimized fer read'n an' expands most o' th' avail'ble sections.</p>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-7236ea50648bc0f468867ad9203e958d"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">openapi</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">errorlevel</span> <span class="p">=</span> <span class="s1">&#39;warning&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5724bb60aee75056469c57af58ed1228"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">openapi</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">errorlevel</span><span class="p">:</span><span class="w"> </span><span class="l">warning</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-eac186745df0f33f9c8b4684ec6d5720"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;openapi&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;errorlevel&#34;</span><span class="p">:</span> <span class="s2">&#34;warning&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
   </div>
 </div>
-<h2 id="example">Example</h2>
-<h3 id="using-local-file">Us'n Local File</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{&lt;</span> <span class="nx">openapi</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;petstore.json&#34;</span> <span class="p">&gt;}}</span></span></span></code></pre></div>
-<div class="sc-openapi-wrapper is-load'n helper-loading-container">
+<h3 id="loading-an-external-version-of-the-swagger-ui-library">Load'n an External Version o' th' Swagger UI Library<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Th' theme uses th' shipped Swagger UI library by default.</p>
+<p>In case ye want do use a different version o' th' Swagger UI library but don&rsquo;t want t' override th' shipped version, ye can set <code>customOpenapiURL</code> t' th' URL o' th' external Swagger UI library.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-0b403f2873ae3bb684f7fd7977f12610" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f095df56a99b8ce35f49e043d23959a1" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-6fb873f29214f4dac7feca8f14b029e7" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-0b403f2873ae3bb684f7fd7977f12610"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">customOpenapiURL</span> <span class="p">=</span> <span class="s1">&#39;https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f095df56a99b8ce35f49e043d23959a1"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">customOpenapiURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-6fb873f29214f4dac7feca8f14b029e7"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;customOpenapiURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="force-loading-of-the-swagger-ui-library">Force Load'n o' th' Swagger UI Library<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> Th' Swagger UI library will be boarded if th' plank contains an <code>openapi</code> shortcode or codefence.</p>
+<p>Ye can force loading th' Swagger UI library if no shortcode or codefence was used by sett'n <code>openapi.force=true</code>. If a shortcode or codefence was found, th' option has no effect. This comes handy 'n case ye be us'n script'n t' render a spec.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-0159e1179f9cb53629845146def13945" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-5c6d5bbce7aaa567993b6070f84bc947" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-6b70e6ba0422f690fa1fcd1799641c2d" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-0159e1179f9cb53629845146def13945"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">openapi</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">force</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5c6d5bbce7aaa567993b6070f84bc947"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">openapi</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-6b70e6ba0422f690fa1fcd1799641c2d"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;openapi&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;force&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="setting-a-specific-swagger-ui-theme">Sett'n a Specific Swagger UI Theme<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Th' recommended way t' configure yer Swagger UI theme be t' set th' default value us'n th' <code>--OPENAPI-theme</code> an' <code>OPENAPI-CODE-theme</code> vari'ble 'n yer <a href="/hugo-theme-relearn/pir/configuration/branding/generator/index.html">color variant stylesheet</a>. This allows yer specs t' look pretty when th' user switches th' color variant.</p>
+<p>Th' theme uses Swaggers them'n support. For <code>--OPENAPI-theme</code> th' only allowed values be <code>light</code> or <code>dark</code>. For <code>--OPENAPI-CODE-theme</code> <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" rel="external" target="_self">th' allowed values</a> be <code>agate</code>, <code>arta</code>, <code>monokai</code>, <code>nord</code>, <code>obsidian</code>, <code>tomorrow-night</code>, <code>idea</code>.</p>
+<h2 id="example">Example<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="using-local-file">Us'n Local File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-364d31d2dbebdd4726236ac6a1b42843" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-0577ab14947f6d04691a4a7fbc199318" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-364d31d2dbebdd4726236ac6a1b42843"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">openapi</span><span class="w"> </span><span class="nx">src</span><span class="p">=</span><span class="s">&#34;petstore.json&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-0577ab14947f6d04691a4a7fbc199318"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/openapi.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;src&#34;</span><span class="w"> </span><span class="s">&#34;petstore.json&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sc-openapi-wrapper is-loading helper-loading-container">
   <div
     class="sc-openapi-container"
-    id="R-openapi-932a003354b9d89f92712e0f0220ab74"
+    id="R-openapi-a50ee02fcf81506252a7d53e141cd64b"
     data-openapi-url=""
     data-openapi-spec="{
 	&#34;openapi&#34;: &#34;3.0.2&#34;,
@@ -2435,22 +2737,24 @@
 </div>
  
 
-            <footer class="footline">
-            </footer>
-          </article>
-
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categorrries">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/clipboard.min.js?1726172282" defer></script>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar.min.js?1726172282" defer></script>
-    <script src="/hugo-theme-relearn/js/js-yaml.min.js?1726172282" defer></script>
-    <script>window.noZensmooth = true;</script>
-    <script src="/hugo-theme-relearn/js/swagger-ui/swagger-ui-bundle.js?1726172282" defer></script>
-    <script src="/hugo-theme-relearn/js/swagger-ui/swagger-ui-standalone-preset.js?1726172282" defer></script>
-    <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1726172282", cssInProject: true, assetsBuster: "?1726172282" };
-    </script>
-    <script src="/hugo-theme-relearn/js/theme.js?1726172282" defer></script>
+    <script src="/hugo-theme-relearn/js/js-yaml/js-yaml.min.27e5afd901466eb78e42374935cba773ca53f77b0d52eedb103b2b43f67a7f6a.js" defer></script>
+    <script src="/hugo-theme-relearn/js/swagger-ui/swagger-ui-bundle.62df541529080464a7660adc793eab7128c6193ce3be24ddc1e0e0a4a63edc2f.js" defer></script>
+    <script src="/hugo-theme-relearn/js/swagger-ui/swagger-ui-standalone-preset.5243d492e14505e0cab87ac8b0195d0e615943e651743b2b698450a46eb470be.js" defer></script>
+    <script type="application/json" id="R-openapi-config" data-openapi-css-url="/hugo-theme-relearn/css/swagger-ui/swagger-ui.1ac324f7dcd27e4b9386b4bd6421271ec147e922a22c05ba24b11515e9aa6321.css" data-swagger-css-url="/hugo-theme-relearn/css/swagger.min.5d78addee3a25dd985a6250cd62a1179170a3dd9c592839bc93acf9729deabc7.css" data-format-html-css-url="/hugo-theme-relearn/css/format-html.min.deb22930473c957c17489dd61bdb9bfff60f42e58230a0356b13fb73b6adbbfa.css" data-format-print-css-url="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css">{}</script>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

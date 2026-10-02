@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="9.2.0 (XXXX-XX-XX) Hugo 0.166.0 0.166.0 This release requires a newer Hugo version. Change Change The new pages shortcode lists pages of your site. Besides the layouts known from the now deprecated children shortcode, it can list descendants, siblings or ancestors, filter them and group and order them by any field or front matter parameter of a page.
+The children shortcode still works but issues a deprecation warning for each use, naming the pages call that replaces it. See the migration instructions.
+With type=group, the children shortcode no longer shows a multi-column layout. If you want to restore the previous behavior, replace it by the pages shortcode with columns=3.
+Change The new callout shortcode replaces the now deprecated notice shortcode, matching the name of the Markdown callouts it shares its boxes with. The parameters are unchanged.
+The notice shortcode still works but issues a deprecation warning for each use. Rename your calls to callout. See the migration instructions.
+Change Hugo’s built-in details shortcode replaces the now deprecated expand shortcode, so your content stays portable to other themes.
+The expand shortcode still works but issues a deprecation warning for each use. The parameters of the details shortcode are named differently, so a call can not just be renamed. See the migration instructions.
+If you already use the details shortcode, it now behaves like the one built into Hugo. Its content is rendered as Markdown if called with {{&lt; details &gt;}}, and the title parameter is honored. If your content is HTML or contains other shortcodes, set the new raw=true parameter to have it written as it is.
+Change The math shortcode now renders your formulae using Hugo’s built-in KaTeX while your site is built, instead of the MathJax library in the browser.
+The theme finds your formulae by the delimiters of Hugo’s Passthrough configuration. If your site doesn’t have it yet, add it, otherwise their delimited formulae are not rendered. Content without delimiters is rendered as one formula regardless for codefence, shortcode and partial syntax.
+By default, formulae are written as MathML and displayed by the browser. If you prefer the look of KaTeX the same in every browser, set math.output=&#39;htmlAndMathml&#39;.
+The options mathJaxInitialize and customMathJaxURL are gone. Instead, you can set any KaTeX option in math. If you defined your own macros, move them to math.macros.
+KaTeX doesn’t know every command of MathJax. A formula it can not render is written as its source and reported as a warning in your build.
+Change Markdown tables can now merge cells, using the syntax of Markdown Preview Enhanced. A cell containing only &gt; merges into the cell to its right, a cell containing only ^ into the cell above.
+If one of your tables already has such a cell and should show the character itself, escape it with two backslashes, like \\&gt;.
+Change The listings of taxonomy and term pages are now configured by params.pages in their front matter, using the parameters of the pages shortcode. The former params.children is still honored as long as the children shortcode exists.
+Change The front matter params.pages is now honored on every page, not only on taxonomy and term pages. Together with Hugo’s cascade, you can give all listings of a subtree the same look.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 9 :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="9.2.0 (XXXX-XX-XX) Hugo 0.166.0 0.166.0 This release requires a newer Hugo version. Change Change The new pages shortcode lists pages of your site. Besides the layouts known from the now deprecated children shortcode, it can list descendants, siblings or ancestors, filter them and group and order them by any field or front matter parameter of a page.
+The children shortcode still works but issues a deprecation warning for each use, naming the pages call that replaces it. See the migration instructions.
+With type=group, the children shortcode no longer shows a multi-column layout. If you want to restore the previous behavior, replace it by the pages shortcode with columns=3.
+Change The new callout shortcode replaces the now deprecated notice shortcode, matching the name of the Markdown callouts it shares its boxes with. The parameters are unchanged.
+The notice shortcode still works but issues a deprecation warning for each use. Rename your calls to callout. See the migration instructions.
+Change Hugo’s built-in details shortcode replaces the now deprecated expand shortcode, so your content stays portable to other themes.
+The expand shortcode still works but issues a deprecation warning for each use. The parameters of the details shortcode are named differently, so a call can not just be renamed. See the migration instructions.
+If you already use the details shortcode, it now behaves like the one built into Hugo. Its content is rendered as Markdown if called with {{&lt; details &gt;}}, and the title parameter is honored. If your content is HTML or contains other shortcodes, set the new raw=true parameter to have it written as it is.
+Change The math shortcode now renders your formulae using Hugo’s built-in KaTeX while your site is built, instead of the MathJax library in the browser.
+The theme finds your formulae by the delimiters of Hugo’s Passthrough configuration. If your site doesn’t have it yet, add it, otherwise their delimited formulae are not rendered. Content without delimiters is rendered as one formula regardless for codefence, shortcode and partial syntax.
+By default, formulae are written as MathML and displayed by the browser. If you prefer the look of KaTeX the same in every browser, set math.output=&#39;htmlAndMathml&#39;.
+The options mathJaxInitialize and customMathJaxURL are gone. Instead, you can set any KaTeX option in math. If you defined your own macros, move them to math.macros.
+KaTeX doesn’t know every command of MathJax. A formula it can not render is written as its source and reported as a warning in your build.
+Change Markdown tables can now merge cells, using the syntax of Markdown Preview Enhanced. A cell containing only &gt; merges into the cell to its right, a cell containing only ^ into the cell above.
+If one of your tables already has such a cell and should show the character itself, escape it with two backslashes, like \\&gt;.
+Change The listings of taxonomy and term pages are now configured by params.pages in their front matter, using the parameters of the pages shortcode. The former params.children is still honored as long as the children shortcode exists.
+Change The front matter params.pages is now honored on every page, not only on taxonomy and term pages. Together with Hugo’s cascade, you can give all listings of a subtree the same look.">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Version 9 :: Hugo Relearn Theme">
+    <meta property="og:description" content="9.2.0 (XXXX-XX-XX) Hugo 0.166.0 0.166.0 This release requires a newer Hugo version. Change Change The new pages shortcode lists pages of your site. Besides the layouts known from the now deprecated children shortcode, it can list descendants, siblings or ancestors, filter them and group and order them by any field or front matter parameter of a page.
+The children shortcode still works but issues a deprecation warning for each use, naming the pages call that replaces it. See the migration instructions.
+With type=group, the children shortcode no longer shows a multi-column layout. If you want to restore the previous behavior, replace it by the pages shortcode with columns=3.
+Change The new callout shortcode replaces the now deprecated notice shortcode, matching the name of the Markdown callouts it shares its boxes with. The parameters are unchanged.
+The notice shortcode still works but issues a deprecation warning for each use. Rename your calls to callout. See the migration instructions.
+Change Hugo’s built-in details shortcode replaces the now deprecated expand shortcode, so your content stays portable to other themes.
+The expand shortcode still works but issues a deprecation warning for each use. The parameters of the details shortcode are named differently, so a call can not just be renamed. See the migration instructions.
+If you already use the details shortcode, it now behaves like the one built into Hugo. Its content is rendered as Markdown if called with {{&lt; details &gt;}}, and the title parameter is honored. If your content is HTML or contains other shortcodes, set the new raw=true parameter to have it written as it is.
+Change The math shortcode now renders your formulae using Hugo’s built-in KaTeX while your site is built, instead of the MathJax library in the browser.
+The theme finds your formulae by the delimiters of Hugo’s Passthrough configuration. If your site doesn’t have it yet, add it, otherwise their delimited formulae are not rendered. Content without delimiters is rendered as one formula regardless for codefence, shortcode and partial syntax.
+By default, formulae are written as MathML and displayed by the browser. If you prefer the look of KaTeX the same in every browser, set math.output=&#39;htmlAndMathml&#39;.
+The options mathJaxInitialize and customMathJaxURL are gone. Instead, you can set any KaTeX option in math. If you defined your own macros, move them to math.macros.
+KaTeX doesn’t know every command of MathJax. A formula it can not render is written as its source and reported as a warning in your build.
+Change Markdown tables can now merge cells, using the syntax of Markdown Preview Enhanced. A cell containing only &gt; merges into the cell to its right, a cell containing only ^ into the cell above.
+If one of your tables already has such a cell and should show the character itself, escape it with two backslashes, like \\&gt;.
+Change The listings of taxonomy and term pages are now configured by params.pages in their front matter, using the parameters of the pages shortcode. The former params.children is still honored as long as the children shortcode exists.
+Change The front matter params.pages is now honored on every page, not only on taxonomy and term pages. Together with Hugo’s cascade, you can give all listings of a subtree the same look.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 9 :: Hugo Relearn Theme">
+    <meta itemprop="description" content="9.2.0 (XXXX-XX-XX) Hugo 0.166.0 0.166.0 This release requires a newer Hugo version. Change Change The new pages shortcode lists pages of your site. Besides the layouts known from the now deprecated children shortcode, it can list descendants, siblings or ancestors, filter them and group and order them by any field or front matter parameter of a page.
+The children shortcode still works but issues a deprecation warning for each use, naming the pages call that replaces it. See the migration instructions.
+With type=group, the children shortcode no longer shows a multi-column layout. If you want to restore the previous behavior, replace it by the pages shortcode with columns=3.
+Change The new callout shortcode replaces the now deprecated notice shortcode, matching the name of the Markdown callouts it shares its boxes with. The parameters are unchanged.
+The notice shortcode still works but issues a deprecation warning for each use. Rename your calls to callout. See the migration instructions.
+Change Hugo’s built-in details shortcode replaces the now deprecated expand shortcode, so your content stays portable to other themes.
+The expand shortcode still works but issues a deprecation warning for each use. The parameters of the details shortcode are named differently, so a call can not just be renamed. See the migration instructions.
+If you already use the details shortcode, it now behaves like the one built into Hugo. Its content is rendered as Markdown if called with {{&lt; details &gt;}}, and the title parameter is honored. If your content is HTML or contains other shortcodes, set the new raw=true parameter to have it written as it is.
+Change The math shortcode now renders your formulae using Hugo’s built-in KaTeX while your site is built, instead of the MathJax library in the browser.
+The theme finds your formulae by the delimiters of Hugo’s Passthrough configuration. If your site doesn’t have it yet, add it, otherwise their delimited formulae are not rendered. Content without delimiters is rendered as one formula regardless for codefence, shortcode and partial syntax.
+By default, formulae are written as MathML and displayed by the browser. If you prefer the look of KaTeX the same in every browser, set math.output=&#39;htmlAndMathml&#39;.
+The options mathJaxInitialize and customMathJaxURL are gone. Instead, you can set any KaTeX option in math. If you defined your own macros, move them to math.macros.
+KaTeX doesn’t know every command of MathJax. A formula it can not render is written as its source and reported as a warning in your build.
+Change Markdown tables can now merge cells, using the syntax of Markdown Preview Enhanced. A cell containing only &gt; merges into the cell to its right, a cell containing only ^ into the cell above.
+If one of your tables already has such a cell and should show the character itself, escape it with two backslashes, like \\&gt;.
+Change The listings of taxonomy and term pages are now configured by params.pages in their front matter, using the parameters of the pages shortcode. The former params.children is still honored as long as the children shortcode exists.
+Change The front matter params.pages is now honored on every page, not only on taxonomy and term pages. Together with Hugo’s cascade, you can give all listings of a subtree the same look.">
+    <meta itemprop="wordCount" content="1923">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 9 :: Hugo Relearn Theme</title>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html" rel="canonical" type="text/html" title="Version 9 :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/introduction/releasenotes/9/index.xml" rel="alternate" type="application/rss+xml" title="Version 9 :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.ab49d96ad5c84d9a6d617cb5b302a83613b451cde3871cd55a4f7830feb89d07.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/introduction/releasenotes/9/index.html",
+      "relBasePath": "../../..",
+      "relBaseUri": "../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/introduction/releasenotes/9/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#9-2-0">9.2.0 (XXXX-XX-XX)</a>
+      <ul>
+        <li><a href="#hugo-01660">Hugo 0.166.0</a></li>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-1-0">9.1.0 (2026-09-13)</a>
+      <ul>
+        <li><a href="#hugo-01650">Hugo 0.165.0</a></li>
+        <li><a href="#change-1">Change</a></li>
+        <li><a href="#new-1">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-0-0">9.0.0 (2026-01-01)</a>
+      <ul>
+        <li><a href="#hugo">Hugo</a></li>
+        <li><a href="#breaking">Breaking</a></li>
+        <li><a href="#change-2">Change</a></li>
+        <li><a href="#new-2">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 9" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Version 9</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/9/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/9/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/index.html" title="What's New (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/introduction/releasenotes/8/index.html" title="Version 8 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-9">Version 9</h1>
+See the <a href="/hugo-theme-relearn/introduction/changelog/9/index.html">changelog of this version</a> for a detailed list of changes.
+<hr>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.166.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+<h2 id="9-2-0">9.2.0 (XXXX-XX-XX)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="hugo-01660">Hugo 0.166.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.166.0</span></span> This release requires a newer Hugo version.</li>
+</ul>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The new <a href="/hugo-theme-relearn/shortcodes/pages/index.html"><code>pages</code> shortcode</a> lists pages of your site. Besides the layouts known from the now deprecated <code>children</code> shortcode, it can list descendants, siblings or ancestors, filter them and group and order them by any field or front matter parameter of a page.</p>
+<p>The <a href="/hugo-theme-relearn/shortcodes/children/index.html"><code>children</code> shortcode</a> still works but issues a deprecation warning for each use, naming the <code>pages</code> call that replaces it. See the <a href="/hugo-theme-relearn/shortcodes/children/index.html#migration">migration instructions</a>.</p>
+<p>With <code>type=group</code>, the <a href="/hugo-theme-relearn/shortcodes/children/index.html"><code>children</code> shortcode</a> no longer shows a multi-column layout. If you want to restore the previous behavior, replace it by the <code>pages</code> shortcode with <code>columns=3</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The new <a href="/hugo-theme-relearn/shortcodes/callout/index.html"><code>callout</code> shortcode</a> replaces the now deprecated <a href="/hugo-theme-relearn/shortcodes/notice/index.html"><code>notice</code> shortcode</a>, matching the name of the Markdown callouts it shares its boxes with. The parameters are unchanged.</p>
+<p>The <a href="/hugo-theme-relearn/shortcodes/notice/index.html"><code>notice</code> shortcode</a> still works but issues a deprecation warning for each use. Rename your calls to <code>callout</code>. See the <a href="/hugo-theme-relearn/shortcodes/notice/index.html#migration">migration instructions</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Hugo&rsquo;s built-in <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>details</code> shortcode</a> replaces the now deprecated <a href="/hugo-theme-relearn/shortcodes/expand/index.html"><code>expand</code> shortcode</a>, so your content stays portable to other themes.</p>
+<p>The <a href="/hugo-theme-relearn/shortcodes/expand/index.html"><code>expand</code> shortcode</a> still works but issues a deprecation warning for each use. The parameters of the <code>details</code> shortcode are named differently, so a call can not just be renamed. See the <a href="/hugo-theme-relearn/shortcodes/expand/index.html#migration">migration instructions</a>.</p>
+<p>If you already use the <code>details</code> shortcode, it now behaves like the one built into Hugo. Its content is rendered as Markdown if called with <code>{{&lt; details &gt;}}</code>, and the <code>title</code> parameter is honored. If your content is HTML or contains other shortcodes, set the new <code>raw=true</code> parameter to have it written as it is.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/shortcodes/math/index.html"><code>math</code> shortcode</a> now renders your formulae using Hugo&rsquo;s built-in KaTeX while your site is built, instead of the MathJax library in the browser.</p>
+<p>The theme finds your formulae by the delimiters of Hugo&rsquo;s <a href="/hugo-theme-relearn/shortcodes/math/index.html#passthrough-configuration">Passthrough configuration</a>. If your site doesn&rsquo;t have it yet, add it, otherwise their delimited formulae are not rendered. Content without delimiters is rendered as one formula regardless for codefence, shortcode and partial syntax.</p>
+<p>By default, formulae are written as MathML and displayed by the browser. If you prefer the look of KaTeX the same in every browser, set <a href="/hugo-theme-relearn/shortcodes/math/index.html#output-of-the-formulae"><code>math.output='htmlAndMathml'</code></a>.</p>
+<p>The options <code>mathJaxInitialize</code> and <code>customMathJaxURL</code> are gone. Instead, you can set <a href="/hugo-theme-relearn/shortcodes/math/index.html#providing-options-for-katex">any KaTeX option</a> in <code>math</code>. If you defined your own macros, move them to <code>math.macros</code>.</p>
+<p>KaTeX doesn&rsquo;t know every command of MathJax. A formula it can not render is written as its source and reported as a warning in your build.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Markdown tables can now <a href="/hugo-theme-relearn/authoring/markdown/index.html#merged-cells">merge cells</a>, using the syntax of Markdown Preview Enhanced. A cell containing only <code>&gt;</code> merges into the cell to its right, a cell containing only <code>^</code> into the cell above.</p>
+<p>If one of your tables already has such a cell and should show the character itself, escape it with two backslashes, like <code>\\&gt;</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The listings of <a href="/hugo-theme-relearn/authoring/taxterm/index.html">taxonomy and term pages</a> are now configured by <code>params.pages</code> in their front matter, using the parameters of the <code>pages</code> shortcode. The former <code>params.children</code> is still honored as long as the <code>children</code> shortcode exists.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The front matter <code>params.pages</code> is now honored on every page, not only on taxonomy and term pages. Together with Hugo&rsquo;s <code>cascade</code>, you can give all listings of a subtree the same look.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/shortcodes/callout/index.html#with-hint"><code>callout</code> shortcode</a> has a new <code>hint</code> parameter to show a tooltip for the title of the box.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> Markdown blockquotes can <a href="/hugo-theme-relearn/authoring/markdown/index.html#quotations-with-attribution">name the author and the source of the quotation</a> with the new <code>author</code>, <code>source</code> and <code>href</code> Markdown attributes.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/shortcodes/cards/index.html"><code>cards</code> shortcode</a> has a new <code>columns</code> parameter to set the number of columns in full width mode.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/shortcodes/resources/index.html"><code>resources</code> shortcode</a> has a new <code>pageref</code> parameter to list the resources of another page bundle.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The theme writes no inline JavaScript anymore, so your site can be served with a strict <a href="/hugo-theme-relearn/configuration/sitemanagement/csp/index.html">Content Security Policy</a>. On request, it also adds a <a href="/hugo-theme-relearn/configuration/sitemanagement/csp/index.html#subresource-integrity">subresource integrity</a> to its scripts and stylesheets. The <a href="/hugo-theme-relearn/shortcodes/button/index.html#button-with-own-action"><code>button</code></a> and <a href="/hugo-theme-relearn/shortcodes/cards/index.html#card-with-own-action"><code>card</code></a> shortcodes and <a href="/hugo-theme-relearn/configuration/customization/topbar/index.html#button">topbar buttons</a> have a new <code>action</code> parameter to run your own code without inline JavaScript.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The theme now ships a machine-readable <a href="/hugo-theme-relearn/configuration/sitemanagement/sbom/index.html">SBOM</a> at <code>sbom.cdx.json</code>, listing every third-party resource it can publish with your site, each with a license, a digest of the files the theme ships and - where upstream publishes them - a version and a package URL.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-1-0">9.1.0 (2026-09-13)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="hugo-01650">Hugo 0.165.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.165.0</span></span> This release requires a newer Hugo version.</li>
+</ul>
+<h3 id="change-1">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Assets are now busted by their content instead of by the time of your build, so a visitor only refetches what actually changed.</p>
+<p>Formerly every build appended a new id to each asset&rsquo;s URL, emptying a visitor&rsquo;s cache on each deployment even when no asset was different. If you referenced assets from your own partials, <code>assetbusting.gotmpl</code> is replaced by <code>asset.gotmpl</code>, which takes a resource and returns it ready to be linked. It is still honored but now issues a deprecation warning and will be removed with a future update of the theme.</p>
+<div class="tab-panel" data-tab-group="R-tabs-262b5ba36a2991dd1571dceaab5e3a64">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-42f80f525ae5860b1d7f15daf6994832" aria-expanded="true"
+      data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">layouts/partials/custom-header.html</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-42f80f525ae5860b1d7f15daf6994832"
+      data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ with resources.Get &#34;/css/mine.css&#34; }}
+</span></span><span class="line"><span class="cl">  {{ with partial &#34;asset.gotmpl&#34; . }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div><p>Below <code>static</code> this only concerns <code>css/custom.css</code>, <code>js/custom.js</code> and the favicon and logo images; everything else there is published as before. Those are published twice, once untouched and once processed - move them to <code>assets</code> to avoid the superfluous copy.</p>
+<p>As a busted name changes with its content, a build no longer overwrites the file its predecessor wrote and both remain. Purge your output directory, e.g. by building with Hugo&rsquo;s <code>--cleanDestinationDir</code>, or it accumulates every version you ever built - which weighs most if you commit what you build, as publishing to a GitHub Pages branch does.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The Perfect Scrollbar library is no longer shipped with the theme. All scrollbars are the ones of your browser now, styled by the theme.</p>
+<p>The scrollbars colors come from new <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#modifying-variants">theme variant</a> variables, four for each of the three areas, the main content, the menu and the topbar flyouts. <code>MAIN-SCROLLBAR-THUMB-color</code>, <code>MENU-SCROLLBAR-THUMB-color</code> and <code>TOPBAR-SCROLLBAR-THUMB-color</code> color the moving thumb, <code>MAIN-SCROLLBAR-TRACK-color</code>, <code>MENU-SCROLLBAR-TRACK-color</code> and <code>TOPBAR-SCROLLBAR-TRACK-color</code> the track it moves in. Each of them has a <code>-HOVER</code> counterpart - like <code>MAIN-SCROLLBAR-THUMB-HOVER-color</code> or <code>MENU-SCROLLBAR-TRACK-HOVER-color</code> - for the respective hovered area.</p>
+<p>How many of those twelve colors you see an effect from depends on the scrollbar model your browser implements, so don&rsquo;t expect all of them to show everywhere. Where the theme draws the menus scrollbar itself, all four of its colors apply and the thumb reacts to being hovered on its own. A browser that offers only the standard styling has no state for the thumb, so there the <code>-HOVER</code> colors are taken while the surrounding area is hovered instead. And where a browser draws an overlay scrollbar for the content or the topbar flyouts, it keeps its own and the four colors of that area go unused.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/configuration/branding/colors/index.html#parameters">theme variant configuration</a> has a new <code>hidden</code> parameter.</p>
+<p>If set to <code>true</code>, the variant will not be shown in the <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html">variant switcher</a> but is still usable, e.g. as a sub-variant of an auto mode variant.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/configuration/sidebar/menus/index.html#title-for-arbitrary-menus">title above a page sidebar menu</a> is now taken from the root page&rsquo;s <code>linkTitle</code> front matter.</p>
+<p>Formerly this was documented to use the <code>menuTitle</code> front matter, although that was already <a href="/hugo-theme-relearn/introduction/releasenotes/6/index.html#6-0-0">removed in 6.0.0</a> in favor of Hugo&rsquo;s own <code>linkTitle</code>. It is still honored if no <code>linkTitle</code> is set but now issues a deprecation warning and will be removed with a future update of the theme.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Images now carry the dimensions of their resource, so a browser can reserve the space they will take before they have arrived.</p>
+<p>This avoids page reflows as each image loads and affects images that resolve to a resource Hugo can measure: a page resource or a file in your <code>assets</code> directory, in one of the common raster formats. An SVG, a remote address or a path in your <code>static</code> directory has no dimensions to give and is unchanged.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="https://github.com/MihaiValentin/lunr-languages" rel="external" target="_self">Lunr Languages</a> where updated to 1.21.0.</p>
+<p>Searching with the Lunr adapter now finds terms that consist of digits only, like part or standard numbers.</p>
+</li>
+</ul>
+<h3 id="new-1">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/authoring/frontmatter/topbar/index.html#edit-button"><code>editURL</code> option</a> has a new macro <code>${BaseDir}</code>, containing the directory <code>${FilePath}</code> is resolved against.</p>
+<p>Joined, the two are the location of the displayed page on your disk during build, which lets the edit button open your local editor instead of a web service.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-54598e9def799e2fa098d7054502ee2c" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-94eba44299d96507ef18936b43121109" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-8551a1fbfae9c1a967cdc73aaa6244ed" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-54598e9def799e2fa098d7054502ee2c"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;vscode://file/${BaseDir}/${FilePath}&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-94eba44299d96507ef18936b43121109"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">vscode://file/${BaseDir}/${FilePath}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-8551a1fbfae9c1a967cdc73aaa6244ed"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;editURL&#34;</span><span class="p">:</span> <span class="s2">&#34;vscode://file/${BaseDir}/${FilePath}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>The macro is written the way a URL writes a path - with forward slashes and without a leading slash - so the same setting works on Windows and on Unix-like systems.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/shortcodes/cards/index.html#card-parameters"><code>card</code> shortcode</a> has a new <code>imagealt</code> parameter, giving the card&rsquo;s image a text alternative.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The theme has updated its Mermaid dependency to 11.17.2. This adds support for <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#swimlanes">swimlanes</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#venn">Venn</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#ishikawa">Ishikawa</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#wardley">Wardley</a>, <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#cynefin">Cynefin</a> and <a href="/hugo-theme-relearn/shortcodes/mermaid/index.html#treeview">TreeView</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The translation for Portuguese was divided into European Portuguese and Brazilian Portuguese.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The search now supports the Polish language.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-0-0">9.0.0 (2026-01-01)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="hugo">Hugo<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">Hugo</span></span> When the theme introduced compatibility with Hugo <span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.146.7</span></span> it had to remove a performance optimization due to a limitation in Hugo. This was later fixed in Hugo <span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank"></i></span><span class="badge-content">0.149.0</span></span>.</p>
+<p>This release reintroduces the performance optimization and will cause your page build to fail with the above mentioned Hugo versions. You either need to upgrade or downgrade Hugo to an unaffected version.</p>
+</li>
+</ul>
+<h3 id="breaking">Breaking<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle"></i></span><span class="badge-content">Breaking</span></span> The <a href="/hugo-theme-relearn/shortcodes/children/index.html"><code>children</code> shortcode</a> has a new layout resembling the taxonomy and term pages by setting <code>type=group</code>.</p>
+<p>Sadly, introducing usage of the shortcode in the taxonomy and term pages (see below) caused necessary breaking changes</p>
+<ul>
+<li>the shortcode now requires enabling block attributes in your <code>hugo.toml</code> by setting <code>markup.goldmark.parser.attribute.block=true</code></li>
+<li>the call syntax for <code>type=card</code> now is <code>{{&lt; children &gt;}}</code> instead of <code>{{% children %}}</code> if <code>goldmark.unsafe=false</code> is configured in your <code>hugo.toml</code> (which is the default)</li>
+</ul>
+<p>In addition the shortcode learned some new parameter for displaying breadcrumbs and setting a heading depth.</p>
+</li>
+</ul>
+<h3 id="change-2">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> This release comes with a new way to <a href="/hugo-theme-relearn/configuration/branding/logo/index.html#changing-the-title">configure your logo image and title</a> in the menu sidebar.</p>
+<p>With the new system you can</p>
+<ul>
+<li>rely on auto detection for an image</li>
+<li>remove the image completely</li>
+<li>override the image for each variant</li>
+<li>set color, sizes and fonts for title and image</li>
+<li>let the image and title lay out vertically or horizontally</li>
+<li>override the complete layout with your own partial (that&rsquo;s the old way and still works)</li>
+</ul>
+<p>Nevertheless, this required massive changes to the CSS and most likely your logo will require tweaking of the CSS styles after an update.</p>
+<p>The easiest way to fix this is to remove a overridden <code>layouts/partials/logo.html</code> template in <strong>your installation</strong> and rely on the new configuration.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> Font Awesome was updated to version 7.1.0 which results in slightly different icons.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The search results of the search box are now colored in the same way as the search results on the dedicated search page using color styles of the content area.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle"></i></span><span class="badge-content">Change</span></span> The <a href="/hugo-theme-relearn/shortcodes/details/index.html"><code>expand</code> shortcode</a> has changed its default text of <code>Expand me...</code> to <code>Details</code> to be in sync with Hugo&rsquo;s built-in <code>details</code> shortcode and the <code>details</code> HTML element.</p>
+</li>
+</ul>
+<h3 id="new-2">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The <a href="/hugo-theme-relearn/authoring/taxterm/index.html">taxonomy and term</a> pages are now internally using the <a href="/hugo-theme-relearn/shortcodes/children/index.html"><code>children</code> shortcode</a>. This makes it possible for you to set parameter of the children shortcode in your taxonomy/term pages front matter to change the layout.</p>
+<p>By that you can - for example - display the sub pages in a card layout. See the <a href="/hugo-theme-relearn/categories/index.html">categories taxonomy</a> for an example.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle"></i></span><span class="badge-content">New</span></span> The themes dark-mode support for the <a href="/hugo-theme-relearn/shortcodes/openapi/index.html"><code>openapi</code> shortcode</a> was changed to the built-in implementation of the used Swagger library.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

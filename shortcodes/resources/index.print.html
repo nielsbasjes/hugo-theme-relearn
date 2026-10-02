@@ -1,269 +1,583 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.134.2">
-    <meta name="generator" content="Relearn 6.4.0+tip">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
     <meta name="description" content="List resources contained in a page bundle">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/featured.png">
     <meta name="twitter:title" content="Resources :: Hugo Relearn Theme">
     <meta name="twitter:description" content="List resources contained in a page bundle">
-    <meta property="og:url" content="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/resources/index.html">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/index.html">
     <meta property="og:site_name" content="Hugo Relearn Theme">
     <meta property="og:title" content="Resources :: Hugo Relearn Theme">
     <meta property="og:description" content="List resources contained in a page bundle">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Shortcodes">
-    <meta property="og:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/featured.png">
     <meta itemprop="name" content="Resources :: Hugo Relearn Theme">
     <meta itemprop="description" content="List resources contained in a page bundle">
-    <meta itemprop="wordCount" content="558">
-    <meta itemprop="image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="wordCount" content="693">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/featured.png">
+    <meta itemprop="keywords" content="Howto,Reference">
     <title>Resources :: Hugo Relearn Theme</title>
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="alternate" hreflang="en">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/resources/index.html" rel="alternate" hreflang="art-x-pir">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="canonical" type="text/html" title="Resources :: Hugo Relearn Theme">
-    <link href="/hugo-theme-relearn/shortcodes/resources/index.xml" rel="alternate" type="application/rss+xml" title="Resources :: Hugo Relearn Theme">
-    <link href="/hugo-theme-relearn/images/logo.svg?1726172281" rel="icon" type="image/svg+xml">
-    <link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/nucleus.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar.min.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-style">
-    <link href="/hugo-theme-relearn/css/chroma-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/hugo-theme-relearn/css/variant.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/print.css?1726172281" rel="stylesheet" media="print">
-    <link href="/hugo-theme-relearn/css/format-print.css?1726172281" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/variant.js?1726172281"></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/mcshelby.github.io\/hugo-theme-relearn';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/hugo-theme-relearn/index.search.js?1726172281";
-      // variant stuff
-      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
-    </script>
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/resources/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/resources/index.html" rel="canonical" type="text/html" title="Resources :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.ab49d96ad5c84d9a6d617cb5b302a83613b451cde3871cd55a4f7830feb89d07.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/shortcodes/resources/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
+       
       #R-body img.bg-white {
         background-color: white;
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/hugo-theme-relearn/shortcodes/resources/index.html">
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/resources/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar">
-        <div class="topbar-wrapper">
-          <div class="topbar-sidebar-divider"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#custom-title-list-of-resources-ending-in-png-jpg-or-gif">Custom Title, List of Resources Ending in png, jpg or gif</a></li>
+        <li><a href="#info-styled-box-descending-sort-order">Info Styled Box, Descending Sort Order</a></li>
+        <li><a href="#with-user-defined-color-and-font-awesome-brand-icon">With User-Defined Color and Font Awesome Brand Icon</a></li>
+        <li><a href="#expander-with-initially-hidden-resource-list">Expander with Initially Hidden Resource List</a></li>
+        <li><a href="#resources-of-another-page">Resources of Another Page</a></li>
+        <li><a href="#style-color-title-and-icons">Style, Color, Title and Icons</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Resources</span><meta itemprop="position" content="2"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Shortcodes &gt; Resources" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Resources</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/openapi/index.html" title="OpenAPI (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/resources/index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/siteparam/index.html" title="SiteParam (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/resources/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/pages/index.html" title="Pages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/siteparam/index.html" title="SiteParam (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+      <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
 
 <h1 id="resources">Resources</h1>
 
-<p>The <code>resources</code> shortcode displays the <a href="https://gohugo.io/methods/resource/title/" rel="external" target="_self">titles</a> of resources contained in a <a href="https://gohugo.io/content-management/page-bundles/" rel="external" target="_self">page bundle</a>.</p>
-<div class="box attachments cstyle transparent">
-  <div class="box-label">
-    <i class="fa-fw fas fa-paperclip"></i> Attachments
-  </div>
-  <ul class="attachments-files box-content">
-<li><a href="/hugo-theme-relearn/shortcodes/resources/hugo.png">hugo.png</a> (17 KB)</li>
+<p>The <code>resources</code> shortcode displays links to resources contained in a <a href="https://gohugo.io/content-management/page-bundles/" rel="external" target="_self">page bundle</a>.</p>
+
+<details open class="box cstyle attachments transparent">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-paperclip"></i> 
+    Attachments
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/featured.png">featured.png</a> (66 KB)</li>
 <li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
 <li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/subdir/hugo.png">subdir/hugo.png</a> (17 KB)</li>
 <li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
-  </ul>
-</div>
-<h2 id="usage">Usage</h2>
-<p>While the examples are using shortcodes with named parameter you are free to also call this shortcode from your own partials.</p>
-<div class="tab-panel" data-tab-group="shortcode-parameter">
+</ul>
+  </div>
+</details>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      data-tab-item="shortcode"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('shortcode-parameter','shortcode')"
+      aria-controls="R-tab-id-98a3d45e71a4bf03ad9fb6a85c53876a" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
-      <span class="tab-nav-text">shortcode</span>
+      <span class="tab-nav-text">Shortcode</span>
     </button>
     <button
-      data-tab-item="partial"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','partial')"
+      aria-controls="R-tab-id-36bbb16354b81c3a8fa7d1f4eae890d3" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">partial</span>
+      <span class="tab-nav-text">Partial</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      data-tab-item="shortcode"
-      class="tab-content tab-panel-style cstyle initial active">
+      id="R-tab-id-98a3d45e71a4bf03ad9fb6a85c53876a"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">resources</span> <span class="nx">sort</span><span class="p">=</span><span class="s">&#34;asc&#34;</span> <span class="o">/%</span><span class="p">}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">sort</span><span class="p">=</span><span class="s">&#34;asc&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="partial"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-36bbb16354b81c3a8fa7d1f4eae890d3"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;shortcodes/resources.html&#34;</span> <span class="p">(</span><span class="nx">dict</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;page&#34;</span> <span class="p">.</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;sort&#34;</span> <span class="s">&#34;asc&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;sort&#34;</span><span class="w"> </span><span class="s">&#34;asc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
 <p>Multilanguage features are not supported directly by the shortcode but rely on Hugo&rsquo;s handling for resource translations applied when the theme iterates over all available resources.</p>
-<h3 id="parameter">Parameter</h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
-      <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Default</th>
-          <th style="text-align: left">Notes</th>
-      </tr>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
   </thead>
   <tbody>
-      <tr>
-          <td style="text-align: left"><strong>style</strong></td>
-          <td style="text-align: left"><code>transparent</code></td>
-          <td style="text-align: left">The style scheme used for the box.<br><br>- by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code><br>- by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code><br>- by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>red</code><br>- by special color: <code>default</code>, <code>transparent</code>, <code>code</code><br><br>You can also <a href="/hugo-theme-relearn/shortcodes/notice/index.html#configuration">define your own styles</a>.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>color</strong></td>
-          <td style="text-align: left">see notes</td>
-          <td style="text-align: left">The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> to be used. If not set, the chosen color depends on the <strong>style</strong>. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>title</strong></td>
-          <td style="text-align: left">see notes</td>
-          <td style="text-align: left">Arbitrary text for the box title. Depending on the <strong>style</strong> there may be a default title. Any given value will overwrite the default.<br><br>- for severity styles: the matching title for the severity<br>- for all other styles: <code>Resources</code><br><br>If you want no title for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>icon</strong></td>
-          <td style="text-align: left">see notes</td>
-          <td style="text-align: left"><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title. Depending on the <strong>style</strong> there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: <code>paperclip</code><br><br>If you want no icon, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>expanded</strong></td>
-          <td style="text-align: left"><em>&lt;empty&gt;</em></td>
-          <td style="text-align: left">Whether to draw an expander and how the resource list is displayed.<br><br>- <em>&lt;empty&gt;</em>: no expander is drawn and the resource list is permanently shown<br>- <code>true</code>: the expander is drawn and the resource list is initially shown<br>- <code>false</code>: the expander is drawn and the resource list is initially hidden</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>sort</strong></td>
-          <td style="text-align: left"><code>asc</code></td>
-          <td style="text-align: left">Sorting the output in <code>asc</code>ending or <code>desc</code>ending order.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>pattern</strong></td>
-          <td style="text-align: left"><code>.*</code></td>
-          <td style="text-align: left">A <a href="https://en.wikipedia.org/wiki/Regular_expression" rel="external" target="_self">regular expressions</a>, used to filter the resources <a href="https://gohugo.io/methods/resource/name/" rel="external" target="_self">by name</a>. For example:<br><br>- to match a file suffix of &lsquo;jpg&rsquo;, use <code>.*\.jpg</code> (not <code>*.\.jpg</code>)<br>- to match file names ending in <code>jpg</code> or <code>png</code>, use <code>.*\.(jpg|png)</code></td>
-      </tr>
+    <tr>
+      <td><strong>pageref</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>A reference to the page bundle whose resources are listed, like <code>/shortcodes/attachments</code> or relative to the current page.<br><br>If set and it doesn&rsquo;t resolve to a page, the build fails. If not set, the current page is used or, if called as partial, the page given in <code>page</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>style</strong></td>
+      <td><code>transparent</code></td>
+      <td>The style scheme used for the box.<br><br>- by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code><br>- by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code><br>- by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>red</code><br>- by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>action</code>, <code>inline</code><br><br>You can also <a href="/hugo-theme-relearn/shortcodes/callout/index.html#defining-own-styles">define your own styles</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>color</strong></td>
+      <td>see notes</td>
+      <td>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> to be used. If not set, the chosen color depends on the <strong>style</strong>. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>see notes</td>
+      <td>Arbitrary text for the box title. Depending on the <strong>style</strong> there may be a default title. Any given value will overwrite the default.<br><br>- for severity styles: the matching title for the severity<br>- for all other styles: <code>Resources</code><br><br>If you want no title for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><strong>icon</strong></td>
+      <td>see notes</td>
+      <td><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title. Depending on the <strong>style</strong> there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: <code>paperclip</code><br><br>If you want no icon, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><strong>expanded</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Whether to draw an expander and how the resource list is displayed.<br><br>- <em>&lt;empty&gt;</em>: no expander is drawn and the resource list is permanently shown<br>- <code>true</code>: the expander is drawn and the resource list is initially shown<br>- <code>false</code>: the expander is drawn and the resource list is initially hidden</td>
+    </tr>
+    <tr>
+      <td><strong>sort</strong></td>
+      <td><code>asc</code></td>
+      <td>Sorting the output in <code>asc</code>ending or <code>desc</code>ending order.</td>
+    </tr>
+    <tr>
+      <td><strong>pattern</strong></td>
+      <td><code>.*</code></td>
+      <td>A <a href="https://en.wikipedia.org/wiki/Regular_expression" rel="external" target="_self">regular expressions</a>, used to filter the resources <a href="https://gohugo.io/methods/resource/name/" rel="external" target="_self">by name</a>. For example:<br><br>- to match a file suffix of &lsquo;jpg&rsquo;, use <code>.*\.jpg</code> (not <code>*.\.jpg</code>)<br>- to match file names ending in <code>jpg</code> or <code>png</code>, use <code>.*\.(jpg|png)</code></td>
+    </tr>
   </tbody>
 </table>
-<h2 id="examples">Examples</h2>
-<h3 id="custom-title-list-of-resources-ending-in-png-jpg-or-gif">Custom Title, List of Resources Ending in png, jpg or gif</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">resources</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;Related **files**&#34;</span> <span class="nx">pattern</span><span class="p">=</span><span class="s">&#34;.*\.(png|jpg|gif)&#34;</span> <span class="o">/%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="box attachments cstyle transparent">
-  <div class="box-label">
-    <i class="fa-fw fas fa-paperclip"></i> Related <strong>files</strong>
-  </div>
-  <ul class="attachments-files box-content">
-<li><a href="/hugo-theme-relearn/shortcodes/resources/hugo.png">hugo.png</a> (17 KB)</li>
-  </ul>
-</div>
-<h3 id="info-styled-box-descending-sort-order">Info Styled Box, Descending Sort Order</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">resources</span> <span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span> <span class="nx">sort</span><span class="p">=</span><span class="s">&#34;desc&#34;</span> <span class="o">/%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="box attachments cstyle info">
-  <div class="box-label">
-    <i class="fa-fw fas fa-info-circle"></i> Info
-  </div>
-  <ul class="attachments-files box-content">
-<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/hugo.png">hugo.png</a> (17 KB)</li>
-  </ul>
-</div>
-<h3 id="with-user-defined-color-and-font-awesome-brand-icon">With User-Defined Color and Font Awesome Brand Icon</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">resources</span> <span class="nx">color</span><span class="p">=</span><span class="s">&#34;fuchsia&#34;</span> <span class="nx">icon</span><span class="p">=</span><span class="s">&#34;fa-fw fab fa-hackerrank&#34;</span> <span class="o">/%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="box attachments cstyle default" style="--VARIABLE-BOX-color: fuchsia;">
-  <div class="box-label">
-    <i class="fa-fw fab fa-hackerrank"></i> Attachments
-  </div>
-  <ul class="attachments-files box-content">
-<li><a href="/hugo-theme-relearn/shortcodes/resources/hugo.png">hugo.png</a> (17 KB)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
-  </ul>
-</div>
-<h3 id="expander-with-initially-hidden-resource-list">Expander with Initially Hidden Resource List</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">resources</span> <span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span> <span class="nx">expanded</span><span class="p">=</span><span class="s">&#34;false&#34;</span> <span class="o">/%</span><span class="p">}}</span></span></span></code></pre></div>
-<div class="expand box attachments cstyle primary">
-  <input type="checkbox" id="R-expand-ecc9468e60af7d3ae0a5ab5ca90863b9" aria-controls="R-expandcontent-ecc9468e60af7d3ae0a5ab5ca90863b9">
-  <label class="expand-label box-label" for="R-expand-ecc9468e60af7d3ae0a5ab5ca90863b9">
-    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
-    <i class="expander-icon fa-fw fas fa-chevron-right"></i> <i class="fa-fw fas fa-paperclip"></i> Attachments
-  </label>
-  <div class="box-spacer"></div>
-  <ul id="R-expandcontent-ecc9468e60af7d3ae0a5ab5ca90863b9" class="attachments-files box-content expand-content">
-<li><a href="/hugo-theme-relearn/shortcodes/resources/hugo.png">hugo.png</a> (17 KB)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
-<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
-  </ul>
-</div>
-<h3 id="style-color-title-and-icons">Style, Color, Title and Icons</h3>
-<p>For further examples for <strong>style</strong>, <strong>color</strong>, <strong>title</strong> and <strong>icon</strong>, see the <a href="/hugo-theme-relearn/shortcodes/notice/index.html"><code>notice</code> shortcode</a> documentation. The parameter are working the same way for both shortcodes, besides having different defaults.</p>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="custom-title-list-of-resources-ending-in-png-jpg-or-gif">Custom Title, List of Resources Ending in png, jpg or gif<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 
-            <footer class="footline">
-            </footer>
-          </article>
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-8ad28ba5dadf43ce0fe9d488afe094dd" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-6db245857be99108b801f54d3c32b8cd" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-8ad28ba5dadf43ce0fe9d488afe094dd"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">pattern</span><span class="p">=</span><span class="s">&#34;.*\.(png|jpg|gif)&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Related **files**&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-6db245857be99108b801f54d3c32b8cd"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;pattern&#34;</span><span class="w"> </span><span class="s">&#34;.*\\.(png|jpg|gif)&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Related **files**&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<details open class="box cstyle attachments transparent">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-paperclip"></i> 
+    Related <strong>files</strong>
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/featured.png">featured.png</a> (66 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/subdir/hugo.png">subdir/hugo.png</a> (17 KB)</li>
+</ul>
+  </div>
+</details>
+<h3 id="info-styled-box-descending-sort-order">Info Styled Box, Descending Sort Order<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-cef72cf96b832d345508185ee6c9bf12" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-51dabe3448203371dff0917ec10f963c" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-cef72cf96b832d345508185ee6c9bf12"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">sort</span><span class="p">=</span><span class="s">&#34;desc&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-51dabe3448203371dff0917ec10f963c"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;sort&#34;</span><span class="w"> </span><span class="s">&#34;desc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;info&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<details open class="box cstyle attachments info">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-info-circle"></i> 
+    Info
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/subdir/hugo.png">subdir/hugo.png</a> (17 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/featured.png">featured.png</a> (66 KB)</li>
+</ul>
+  </div>
+</details>
+<h3 id="with-user-defined-color-and-font-awesome-brand-icon">With User-Defined Color and Font Awesome Brand Icon<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-66b20c5066e2b7dc6305c3259411ebc6" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-fa354e1707ea8c224188b68a09334aaa" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-66b20c5066e2b7dc6305c3259411ebc6"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;fuchsia&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;fa-fw fab fa-hackerrank&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-fa354e1707ea8c224188b68a09334aaa"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;fuchsia&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;fa-fw fab fa-hackerrank&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<details open class="box cstyle attachments default" style=";--VARIABLE-BOX-color: fuchsia">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fab fa-hackerrank"></i> 
+    Attachments
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/featured.png">featured.png</a> (66 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/subdir/hugo.png">subdir/hugo.png</a> (17 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
+</ul>
+  </div>
+</details>
+<h3 id="expander-with-initially-hidden-resource-list">Expander with Initially Hidden Resource List<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-13477a28acd2846a9f504ce0b98a17b3" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-166d4451bdf1550b56afecc82cb73533" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-13477a28acd2846a9f504ce0b98a17b3"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">expanded</span><span class="p">=</span><span class="s">&#34;false&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-166d4451bdf1550b56afecc82cb73533"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;expanded&#34;</span><span class="w"> </span><span class="s">&#34;false&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;primary&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<details class="box cstyle attachments primary expand">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    <i class="fa-fw fas fa-paperclip"></i> 
+    Attachments
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/featured.png">featured.png</a> (66 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/MaybeTreasure.en.txt">MaybeTreasure.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/NoTreasure.en.txt">NoTreasure.en.txt</a> (23 B)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/subdir/hugo.png">subdir/hugo.png</a> (17 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/resources/Treasure.pir.txt">Treasure.pir.txt</a> (31 B)</li>
+</ul>
+  </div>
+</details>
+<h3 id="resources-of-another-page">Resources of Another Page<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-05e2ab34b72f7cfbfee0e8e75a917aeb" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-c6b01ee7575e71886d8a6704a5758c80" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-05e2ab34b72f7cfbfee0e8e75a917aeb"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">resources</span><span class="w"> </span><span class="nx">pageref</span><span class="p">=</span><span class="s">&#34;/shortcodes/attachments&#34;</span><span class="w"> </span><span class="nx">pattern</span><span class="p">=</span><span class="s">&#34;.*/hugo\..*&#34;</span><span class="w"> </span><span class="o">/%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-c6b01ee7575e71886d8a6704a5758c80"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/resources.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;pageref&#34;</span><span class="w"> </span><span class="s">&#34;/shortcodes/attachments&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;pattern&#34;</span><span class="w"> </span><span class="s">&#34;.*/hugo\\..*&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<details open class="box cstyle attachments transparent">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-paperclip"></i> 
+    Attachments
+  </summary>
+  <div class="box-content">
+<ul>
+<li><a href="/hugo-theme-relearn/shortcodes/attachments/index.en.files/hugo.png">index.en.files/hugo.png</a> (17 KB)</li>
+<li><a href="/hugo-theme-relearn/shortcodes/attachments/index.en.files/hugo.txt">index.en.files/hugo.txt</a> (20 B)</li>
+</ul>
+  </div>
+</details>
+<h3 id="style-color-title-and-icons">Style, Color, Title and Icons<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>For further examples for <strong>style</strong>, <strong>color</strong>, <strong>title</strong> and <strong>icon</strong>, see the <a href="/hugo-theme-relearn/shortcodes/callout/index.html"><code>callout</code> shortcode</a> documentation. The parameters are working the same way for both shortcodes, besides having different defaults.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/clipboard.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/theme.js?1726172281" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,188 +1,380 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.134.2">
-    <meta name="generator" content="Relearn 6.4.0+tip">
+    <meta name="generator" content="Hugo 0.167.0">
+    <meta name="generator" content="Relearn 9.1.0+be2b1bebd417409e602dbec675fb70d318ca37c6">
     <meta name="description" content="Displays content from other files">
     <meta name="author" content="Sören Weber">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/featured.png">
     <meta name="twitter:title" content="Include :: Hugo Relearn Theme">
     <meta name="twitter:description" content="Displays content from other files">
-    <meta property="og:url" content="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/include/index.html">
+    <meta property="og:url" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/index.html">
     <meta property="og:site_name" content="Hugo Relearn Theme">
     <meta property="og:title" content="Include :: Hugo Relearn Theme">
     <meta property="og:description" content="Displays content from other files">
     <meta property="og:locale" content="en">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="Shortcodes">
-    <meta property="og:image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/featured.png">
     <meta itemprop="name" content="Include :: Hugo Relearn Theme">
     <meta itemprop="description" content="Displays content from other files">
-    <meta itemprop="wordCount" content="236">
-    <meta itemprop="image" content="https://mcshelby.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="wordCount" content="362">
+    <meta itemprop="image" content="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/featured.png">
+    <meta itemprop="keywords" content="Howto,Reference,Include.errorlevel,Include.errorlevel">
     <title>Include :: Hugo Relearn Theme</title>
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="en">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/pir/shortcodes/include/index.html" rel="alternate" hreflang="art-x-pir">
-    <link href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="canonical" type="text/html" title="Include :: Hugo Relearn Theme">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="en">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/pir/shortcodes/include/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://nielsbasjes.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="canonical" type="text/html" title="Include :: Hugo Relearn Theme">
     <link href="/hugo-theme-relearn/shortcodes/include/index.xml" rel="alternate" type="application/rss+xml" title="Include :: Hugo Relearn Theme">
-    <link href="/hugo-theme-relearn/images/logo.svg?1726172281" rel="icon" type="image/svg+xml">
-    <link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fontawesome-all.min.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/nucleus.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/auto-complete.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/perfect-scrollbar.min.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/hugo-theme-relearn/css/fonts.css?1726172281" rel="stylesheet"></noscript>
-    <link href="/hugo-theme-relearn/css/theme.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/theme-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-style">
-    <link href="/hugo-theme-relearn/css/chroma-relearn-auto.css?1726172281" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/hugo-theme-relearn/css/variant.css?1726172281" rel="stylesheet">
-    <link href="/hugo-theme-relearn/css/print.css?1726172281" rel="stylesheet" media="print">
-    <link href="/hugo-theme-relearn/css/format-print.css?1726172281" rel="stylesheet">
-    <script src="/hugo-theme-relearn/js/variant.js?1726172281"></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/mcshelby.github.io\/hugo-theme-relearn';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/hugo-theme-relearn/index.search.js?1726172281";
-      // variant stuff
-      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
-    </script>
+    <link href="/hugo-theme-relearn/images/logo.d30ab0425821f45713322a73c1eeb192e311689b03371519abbe061a24d1201e.svg" rel="icon" type="image/svg+xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.78b49c23f59ffb08554285843ed4c841484fe34c489058b2991edc027cdd47fc.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.7b340a2a0841d2466dca47e43cbd8c4dfe6a4f77a6c81c984d49ebb60ba2e299.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.2e613f0a1ce042c097f61ecc0e3f843d395bf3a42717715f9c08a11dc2f21122.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.373845112980472e938f57e7ec9a00ff9d7b651d7e72cacce2b29211ad5f1924.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.ab49d96ad5c84d9a6d617cb5b302a83613b451cde3871cd55a4f7830feb89d07.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.09fc08f76169bd5ce54ab937deedc95c33b05bd9eead77f843584bd0acacd518.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.69a0061cdc38adc6bc7058be78dfd97a272a8a2e3f35926918f9fb6b1ba3a794.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "absBaseUri": "https://nielsbasjes.github.io/hugo-theme-relearn",
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/shortcodes/include/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "relearn-bright",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_view": "Reset view",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.eb092668f5b427260df95861e28028bbd22ff85e2af068b9bfbedf0cbdbea887.js"></script>
     <style>
+       
       #R-body img.bg-white {
         background-color: white;
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/hugo-theme-relearn/shortcodes/include/index.html">
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/include/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar">
-        <div class="topbar-wrapper">
-          <div class="topbar-sidebar-divider"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#settings">Settings</a>
+      <ul>
+        <li><a href="#enabling-link-warnings">Enabling Link Warnings</a></li>
+      </ul>
+    </li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#arbitrary-content">Arbitrary Content</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Include</span><meta itemprop="position" content="2"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" data-overflow-title="Shortcodes &gt; Include" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Include</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/icon/index.html" title="Icon (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/include/_index.en.md" rel="external" target="_self" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/hugo-theme-relearn/shortcodes/math/index.html" title="Math (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/include/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/icon/index.html" title="Icon (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/hugo-theme-relearn/shortcodes/math/index.html" title="Math (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+      <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
 
 <h1 id="include">Include</h1>
 
 <p>The <code>include</code> shortcode includes other pages, resources or files from your project.</p>
-<h2 id="usage">Usage</h2>
-<p>While the examples are using shortcodes with named parameter you are free to use positional as well or also call this shortcode from your own partials.</p>
-<div class="tab-panel" data-tab-group="shortcode-parameter">
+
+Hello <strong>Hugo</strong>!
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
-      data-tab-item="shortcode"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('shortcode-parameter','shortcode')"
+      aria-controls="R-tab-id-f3e5767cbb7f2b307d0808f83d6ae1cf" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
     >
-      <span class="tab-nav-text">shortcode</span>
+      <span class="tab-nav-text">Shortcode</span>
     </button>
     <button
-      data-tab-item="shortcode-positional"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','shortcode-positional')"
+      aria-controls="R-tab-id-e2b700de2955681ab65edd1eafd2fdd1" aria-expanded="false"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">shortcode (positional)</span>
+      <span class="tab-nav-text">Shortcode (positional)</span>
     </button>
     <button
-      data-tab-item="partial"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('shortcode-parameter','partial')"
+      aria-controls="R-tab-id-f020a4fb068918f149b61fb047e9fd65" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
     >
-      <span class="tab-nav-text">partial</span>
+      <span class="tab-nav-text">Partial</span>
     </button>
   </div>
   <div class="tab-content-container">
     <div
-      data-tab-item="shortcode"
-      class="tab-content tab-panel-style cstyle initial active">
+      id="R-tab-id-f3e5767cbb7f2b307d0808f83d6ae1cf"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="nx">file</span><span class="p">=</span><span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">include</span><span class="w"> </span><span class="nx">file</span><span class="p">=</span><span class="s">&#34;shortcodes/include/INCLUDE_GREETINGS.md&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="shortcode-positional"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-e2b700de2955681ab65edd1eafd2fdd1"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">include</span><span class="w"> </span><span class="s">&#34;shortcodes/include/INCLUDE_GREETINGS.md&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
     <div
-      data-tab-item="partial"
-      class="tab-content tab-panel-style cstyle initial">
+      id="R-tab-id-f020a4fb068918f149b61fb047e9fd65"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
       <div class="tab-content-text">
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;shortcodes/include .html&#34;</span> <span class="p">(</span><span class="nx">dict</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;page&#34;</span> <span class="p">.</span>
-</span></span><span class="line"><span class="cl">  <span class="s">&#34;file&#34;</span> <span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)}}</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/include.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;file&#34;</span><span class="w"> </span><span class="s">&#34;shortcodes/include/INCLUDE_GREETINGS.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
       </div>
     </div>
   </div>
 </div>
 <p>The included files can even contain Markdown and will be taken into account when generating the table of contents.</p>
-<h3 id="parameter">Parameter</h3>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
-      <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Position</th>
-          <th style="text-align: left">Default</th>
-          <th style="text-align: left">Notes</th>
-      </tr>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
   </thead>
   <tbody>
-      <tr>
-          <td style="text-align: left"><strong>file</strong></td>
-          <td style="text-align: left">1</td>
-          <td style="text-align: left"><em>&lt;empty&gt;</em></td>
-          <td style="text-align: left">The path to the page, resource or file to be included. Page and resource paths adhere to <a href="https://gohugo.io/methods/page/path/" rel="external" target="_self">Hugo&rsquo;s logical path</a>. If not found by logical path it falls back to <a href="https://gohugo.io/functions/readfile/" rel="external" target="_self">Hugo&rsquo;s build-in <code>readFile</code> function</a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>hidefirstheading</strong></td>
-          <td style="text-align: left">2</td>
-          <td style="text-align: left"><code>false</code></td>
-          <td style="text-align: left">When <code>true</code> and the included file contains headings, the first heading will be hidden. This comes in handy, eg. if you include otherwise standalone Markdown files.</td>
-      </tr>
+    <tr>
+      <td><strong>file</strong></td>
+      <td>1</td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>The path to the page, resource or file to be included. Page and resource paths adhere to <a href="https://gohugo.io/methods/page/path/" rel="external" target="_self">Hugo&rsquo;s logical path</a>. If not found by logical path it falls back to <a href="https://gohugo.io/functions/readfile/" rel="external" target="_self">Hugo&rsquo;s build-in <code>readFile</code> function</a></td>
+    </tr>
+    <tr>
+      <td><strong>hidefirstheading</strong></td>
+      <td>2</td>
+      <td><code>false</code></td>
+      <td>When <code>true</code> and the included file contains headings, the first heading will be hidden. This comes in handy, eg. if you include otherwise standalone Markdown files.</td>
+    </tr>
   </tbody>
 </table>
-<h2 id="examples">Examples</h2>
-<h3 id="arbitrary-content">Arbitrary Content</h3>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div>
+<h2 id="settings">Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="enabling-link-warnings">Enabling Link Warnings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears"></i></span><span class="badge-content">Option</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown"></i></span><span class="badge-content">Front Matter</span></span> You can use <code>include.errorlevel</code> to control what should happen if a local link cannot be resolved to a resource.</p>
+<p>If not set or empty, any unresolved link is written as given into the resulting output. If set to <code>warning</code> the same happens and an additional warning is printed in the built console. If set to <code>error</code> an error message is printed and the build is aborted.</p>
+<p>Please note that this cannot resolve files inside of your <code>static</code> directory. The file must be a resource of the page or the site.</p>
+<p>Link warnings are also available for <a href="/hugo-theme-relearn/authoring/frontmatter/linking/index.html#enabling-link-and-image-link-warnings">images &amp; links</a> and the <a href="/hugo-theme-relearn/shortcodes/openapi/index.html#enabling-link-warnings">openapi</a> shortcode.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-c7da55ab9cecfc2905cbe617ddf17f85" aria-expanded="true"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">toml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-5befc6693a410f182916b169f9c6f0f3" aria-expanded="false"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">yaml</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-122418af250a0813836437d5dede221e" aria-expanded="false"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">json</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-c7da55ab9cecfc2905cbe617ddf17f85"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">include</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">errorlevel</span> <span class="p">=</span> <span class="s1">&#39;warning&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5befc6693a410f182916b169f9c6f0f3"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">include</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">errorlevel</span><span class="p">:</span><span class="w"> </span><span class="l">warning</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-122418af250a0813836437d5dede221e"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;include&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;errorlevel&#34;</span><span class="p">:</span> <span class="s2">&#34;warning&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="arbitrary-content">Arbitrary Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      aria-controls="R-tab-id-8c302ff4e14173ce695e77a47ef89438" aria-expanded="true"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-nav-button tab-panel-style cstyle code active" tabindex="-1"
+    >
+      <span class="tab-nav-text">Shortcode</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-f5b451633f9d503f937623925afd4771" aria-expanded="false"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Shortcode (positional)</span>
+    </button>
+    <button
+      aria-controls="R-tab-id-d1079b024fda30dd3135b7543d67969a" aria-expanded="false"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-nav-button tab-panel-style cstyle code"
+    >
+      <span class="tab-nav-text">Partial</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-8c302ff4e14173ce695e77a47ef89438"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">include</span><span class="w"> </span><span class="nx">file</span><span class="p">=</span><span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f5b451633f9d503f937623925afd4771"
+      data-tab-item="R-tab-749403ca4f04d32b36ddc7014aec435b"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">include</span><span class="w"> </span><span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-d1079b024fda30dd3135b7543d67969a"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/include.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;file&#34;</span><span class="w"> </span><span class="s">&#34;shortcodes/include/INCLUDE_ME.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
 <p>You can add standard markdown syntax:</p>
 <ul>
 <li>multiple paragraphs</li>
@@ -191,7 +383,7 @@
 <li><a href="https://example.com" rel="external" target="_self">links</a></li>
 <li>etc.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">...and even source code</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">...and even source code</span></span></code></pre></div>
 <blockquote>
 <p>the possibilities are endless (almost - including other shortcodes may or may not work) (almost - including other shortcodes may or may not work)</p>
 </blockquote>
@@ -204,15 +396,21 @@
 </ol>
 </div>
 
-            <footer class="footline">
-            </footer>
-          </article>
 
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/hugo-theme-relearn/js/clipboard.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/perfect-scrollbar.min.js?1726172281" defer></script>
-    <script src="/hugo-theme-relearn/js/theme.js?1726172281" defer></script>
+    <script src="/hugo-theme-relearn/js/theme.min.5a2e43f4ea57ca87d1b103420b4ea619cac43e02c7ebcf0c97a7e404a47239d0.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
